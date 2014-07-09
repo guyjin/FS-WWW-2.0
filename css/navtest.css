@@ -1,0 +1,106 @@
+body {
+  font-family: 'Open Sans', sans-serif;
+}
+body a {
+  text-decoration: none;
+}
+body header {
+  background-color: whitesmoke;
+  overflow: hidden;
+  padding: 10px;
+  position: relative;
+  z-index: 5;
+}
+body header a {
+  font-size: 12px;
+}
+body header #fsLink {
+  float: left;
+}
+body header #usdaLink {
+  float: right;
+}
+body nav {
+  position: relative;
+  z-index: 3;
+}
+body nav ul, body nav li {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+body nav > ul {
+  text-align: center;
+  position: relative;
+  z-index: 3;
+  background-color: #2c353a;
+}
+body nav > ul > li {
+  display: inline-block;
+  width: 15%;
+  max-width: 250px;
+  min-width: 100px;
+  height: 48px;
+}
+body nav > ul > li > a {
+  color: #fff;
+  font-size: 12px;
+  display: block;
+  line-height: 48px;
+  height: 48px;
+  transition: all 250ms ease-in;
+}
+body nav > ul > li > a:hover {
+  background-color: #0b0d0f;
+}
+body nav > ul > li.active > a {
+  background-color: #0b0d0f;
+}
+body nav .dropDownMenu {
+  height: auto;
+  position: absolute;
+  top: -400px;
+  width: 100%;
+  background: #fff;
+  left: 0;
+  text-align: center;
+  overflow: hidden;
+  transition: all 350ms ease;
+  z-index: 1;
+}
+body nav .dropDownMenu ul {
+  display: inline-block;
+  padding: 10px 20px;
+  position: relative;
+}
+body nav .dropDownMenu ul li {
+  text-align: left;
+}
+body nav .dropDownMenu ul li a {
+  color: #333;
+  font-size: 12px;
+  line-height: 24px;
+  display: block;
+  text-align: left;
+  padding: 4px 5px;
+}
+body nav .dropDownMenu ul li a:hover {
+  background-color: #e67e00;
+  color: #fff;
+  border-radius: 3px;
+}
+body nav .dropDownMenu ul:last-of-type {
+  top: -28px;
+}
+body nav .dropDownMenu.active {
+  top: 0;
+}
+body .content .leadImage {
+  height: 400px;
+  overflow: hidden;
+  background-size: cover;
+}
+body .content .leadImage.valley {
+  background-image: url(../img/valley.png);
+  background-position: 0 15%;
+}
