@@ -4,7 +4,6 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>navtest</title>
-    <script src='js/modernizr.custom.50790.js'></script>
     <link rel="stylesheet" href="css/normalize.css">
     <link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,600italic,400,600' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="css/navtest.css">
@@ -16,11 +15,11 @@
         <a href="#" id="usdaLink">USDA</a>
     </header>
     <nav>
-        <ul>
+        <ul id="navbar">
             <li><a href="#">Aviation</a></li>
             <li><a href="#">Community</a></li>
-            <li class="active">
-                <a href="#">Incidents</a>
+            <li>
+                <a href="#" data-menu="incident">Incidents</a>
 
             </li>
             <li><a href="#">Tools</a></li>
@@ -104,5 +103,10 @@
 
         </div>
     </div>
+    <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script src="js/jquery.velocity.min.js"></script>
+    <script src="js/velocity.ui.js"></script>
+    <script src='js/modernizr.custom.50790.js'></script>
+    <script src="js/menu.js"></script>
 </body>
 </html>

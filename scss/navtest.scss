@@ -80,13 +80,14 @@ body {
         .dropDownMenu {
             height: auto;
             position: absolute;
-            top: -400px;
+            top: 48px;
+            opacity: 0;
             width: 100%;
             background: #fff;
             left: 0;
             text-align: center;
             overflow: hidden;
-            transition: all 350ms ease;
+//            transition: all 350ms ease;
             z-index: 1;
 
             ul {
