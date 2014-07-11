@@ -6,11 +6,12 @@ body {
     }
 
     header {
-        background-color: whitesmoke;
+        background: whitesmoke url(../img/border-only-shield.png) no-repeat center;
         overflow: hidden;
         padding: 10px;
         position: relative;
         z-index: 5;
+        line-height: 48px;
 
         a {
             font-size: 12px;
@@ -55,17 +56,11 @@ body {
                     display: block;
                     line-height: 48px;
                     height: 48px;
-                    transition: all 250ms ease-in;
-
-
-                    &:hover {
-                        background-color: darken(#2c353a, 15%);
-                    }
+                    transition: all 100ms ease-in;
                 }
 
 
-
-
+                &:hover,
                 &.active {
                     >a {
                        background-color: darken(#2c353a, 15%);
@@ -78,17 +73,20 @@ body {
         }
 
         .dropDownMenu {
-            height: auto;
+
             position: absolute;
             top: 48px;
-            opacity: 0;
             width: 100%;
             background: #fff;
+            background: rgba(245,245,245,.95);
             left: 0;
             text-align: center;
             overflow: hidden;
-//            transition: all 350ms ease;
             z-index: 1;
+            display: none;
+            -webkit-box-shadow: 5px 1px 0px 2px rgba(0, 0, 0, 0.05);
+            -moz-box-shadow: 5px 1px 0px 2px rgba(0, 0, 0, 0.5);
+            box-shadow: 5px 1px 0px 2 px rgba(0, 0, 0, 0.5);
 
             ul {
                 display: inline-block;
@@ -119,12 +117,12 @@ body {
 
                 &:last-of-type {
 
-                    top: -28px;
+                    top: 0;
                 }
             }
 
             &.active {
-                top: 0;
+                max-height:1000px;
             }
 
 
@@ -134,15 +132,39 @@ body {
 
     .content {
         .leadImage {
-
+            position: relative;
             height: 400px;
             overflow: hidden;
             background-size: cover;
+            background-image: url(../img/carney_springs.jpg);
+            background-position: 0 66% ;
 
-            &.valley {
-                background-image: url(../img/valley.png);
-                background-position: 0 15% ;
+            .details {
+                position: absolute;
+                right: 20px;
+                bottom: 20px;
+                background: darken(#2c353a, 7%);
+                color: #fff;
+                font-size: 10px;
+                /* width: 100px; */
+                padding: 0 10px;
+
+                a {
+                  color: #fff;
+                  text-decoration: underline;
+                }
             }
+
         }
     }
+}
+
+@media (max-width: 740px) {
+  body {
+    .content {
+      .leadImage {
+        height: 200px;
+      }
+    }
+  }
 }

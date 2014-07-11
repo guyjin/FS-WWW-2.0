@@ -5,108 +5,201 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>navtest</title>
     <link rel="stylesheet" href="css/normalize.css">
-    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,600italic,400,600' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,600italic,400,600' rel='stylesheet'
+          type='text/css'>
     <link rel="stylesheet" href="css/navtest.css">
 
 </head>
 <body>
-    <header>
-        <a href="http://www.fs.fed.us" id="fsLink">USFS - Business</a>
-        <a href="#" id="usdaLink">USDA</a>
-    </header>
-    <nav>
-        <ul id="navbar">
-            <li><a href="#">Aviation</a></li>
-            <li><a href="#">Community</a></li>
-            <li>
-                <a href="#" data-menu="incident">Incidents</a>
+<header>
+    <a href="http://www.fs.fed.us" id="fsLink">USFS - Business</a>
+    <a href="#" id="usdaLink">USDA</a>
+</header>
+<nav>
+    <ul id="navbar">
+        <li><a href="#">Aviation</a></li>
+        <li><a href="#">Community</a></li>
+        <li>
+            <a href="#">Incidents</a>
 
-            </li>
-            <li><a href="#">Tools</a></li>
-            <li><a href="#">Jobs</a></li>
-        </ul>
-        <div class="dropDownMenu incident">
-            <ul>
-              <li>
-                <a href="<?php echo $web_root ?>/abs/" class="subnav">
-                  Aviation Business System
-                </a>
-              </li>
-              <li>
-                  <a href="<?php echo $web_root ?>/incident/vendors.php" class="subnav">Being a Vendor</a>
-              </li>
-              <li>
-                <a href="<?php echo $web_root ?>/incident/buyingteam.php" class="subnav">Buying Team</a>
-              </li>
-              <li>
-                <a href="<?php echo $web_root ?>/incident/teamtoolkit.php" class="subnav">Buying Team Toolkit</a>
-              </li>
+            <div class="dropDownMenu">
+                <ul>
+                    <li>
+                        <a href="<?php echo $web_root ?>/abs/" class="subnav">
+                            Aviation Business System
+                        </a>
+                    </li>
+                    <li>
+                        <a href="<?php echo $web_root ?>/incident/vendors.php" class="subnav">Being a Vendor</a>
+                    </li>
+                    <li>
+                        <a href="<?php echo $web_root ?>/incident/buyingteam.php" class="subnav">Buying Team</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li>
+                        <a href="<?php echo $web_root ?>/incident/teamtoolkit.php" class="subnav">Buying Team
+                            Toolkit</a>
+                    </li>
 
-              <li>
-                <a href="<?php echo $web_root ?>/incident/communications.php" class="subnav">
-                  Communications
-                </a>
-              </li>
-            </ul>
-            <ul>
-              <li>
-                <a href="<?php echo $web_root ?>/incident/contacts.php" class="subnav">
-                  Contacts
-                </a>
-              </li>
-              <li>
-                  <a href="<?php echo $web_root ?>/incident/entities.php" class="subnav">
-                      Cooperating Entities
-                  </a>
-              </li>
-              <li>
-                    <a href="<?php echo $web_root ?>/incident/fessaa.php" class="subnav">
-                      FESSAA
-                    </a>
-              </li>
-              <li>
-                  <a href="<?php echo $web_root ?>/incident/fire.php" class="subnav">
-                      Fire/Other Resources
-                  </a>
-              </li>
-              <li>
-                  <a href="http://www.fs.fed.us/fire/contracting/" target="_blank" class="subnav">
-                    National Contracts
-                  </a>
-              </li>
-            </ul>
-            <ul>
-              <li>
-                <a href="<?php echo $web_root ?>/incident/eera.php" class="subnav">
-                  Preseason Agreement Information
-                </a>
-              </li>
-              <li>
-                  <a href="<?php echo $web_root ?>/incident/ref_reg.php" class="subnav">
-                      References / Regulations
-                  </a>
-              </li>
-              <li>
-                <a href="<?php echo $web_root ?>/incident/agreementreports.php" class="subnav">
-                      Regional Agreements &amp; Reports
-                  </a>
-              </li>
-              <li>
-                  <a href="<?php echo $web_root ?>/incident/solicitations.php" class="subnav">Solicitations</a>
-              </li>
+                    <li>
+                        <a href="<?php echo $web_root ?>/incident/communications.php" class="subnav">
+                            Communications
+                        </a>
+                    </li>
 
-            </ul>
-        </div>
-    </nav>
-    <div class="content">
-        <div class="leadImage valley">
+                    <li>
+                        <a href="<?php echo $web_root ?>/incident/contacts.php" class="subnav">
+                            Contacts
+                        </a>
+                    </li>
+                </ul>
+                <ul>
+                    <li>
+                        <a href="<?php echo $web_root ?>/incident/entities.php" class="subnav">
+                            Cooperating Entities
+                        </a>
+                    </li>
+                    <li>
+                        <a href="<?php echo $web_root ?>/incident/fessaa.php" class="subnav">
+                            FESSAA
+                        </a>
+                    </li>
+                    <li>
+                        <a href="<?php echo $web_root ?>/incident/fire.php" class="subnav">
+                            Fire/Other Resources
+                        </a>
+                    </li>
+                </ul>
+                <ul>
+                    <li>
+                        <a href="http://www.fs.fed.us/fire/contracting/" target="_blank" class="subnav">
+                            National Contracts
+                        </a>
+                    </li>
 
+                    <li>
+                        <a href="<?php echo $web_root ?>/incident/eera.php" class="subnav">
+                            Preseason Agreement Information
+                        </a>
+                    </li>
+                    <li>
+                        <a href="<?php echo $web_root ?>/incident/ref_reg.php" class="subnav">
+                            References / Regulations
+                        </a>
+                    </li>
+                </ul>
+                <ul>
+                    <li>
+                        <a href="<?php echo $web_root ?>/incident/agreementreports.php" class="subnav">
+                            Regional Agreements &amp; Reports
+                        </a>
+                    </li>
+                    <li>
+                        <a href="<?php echo $web_root ?>/incident/solicitations.php" class="subnav">Solicitations</a>
+                    </li>
+
+                </ul>
+            </div>
+        </li>
+        <li>
+            <a href="#">Tools</a>
+
+            <div class="dropDownMenu">
+                <ul>
+                    <li>
+                        <a href="<?php echo $web_root ?>/incident/vipr.php" class="viprnav subnav">
+                            VIPR
+                        </a>
+                    </li>
+                    <li>
+                        <a href="<?php echo $web_root ?>/incident/dispatchlookup.php" class="subnavChild">Dispatch
+                            Center Lookup</a>
+                    </li>
+                    <li>
+                        <a href="<?php echo $web_root ?>/incident/dispatch.php" class="subnavChild">
+                            Dispatch Priority Lists
+                        </a>
+                    </li>
+                </ul>
+                <ul>
+                    <li>
+                        <a href="<?php echo $web_root ?>/incident/faq.php" class="subnavChild">FAQs</a>
+                    </li>
+                    <li>
+                        <a href="<?php echo $web_root ?>/incident/keyLinks.php" class="subnavChild">Key Links</a>
+                    </li>
+
+                    <li>
+                        <a href="<?php echo $web_root ?>/incident/eauth.php " class="subnavChild">USDA
+                            eAuthentication</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li>
+                        <a href="<?php echo $web_root; ?>/incident/vendorapp.php" class="subnavChild">Vendor
+                            Application</a>
+                    </li>
+                    <li>
+                        <a href="<?php echo $web_root ?>/incident/vendorsupport.php" class="subnavChild">Vendor
+                            Support</a>
+                    </li>
+                    <li>
+                        <a href="<?php echo $web_root ?>/incident/vipragreements.php" class="subnavChild">
+                            VIPR Preseason Agreements
+                        </a>
+                    </li>
+                </ul>
+                <ul>
+                    <li>
+                        <a href="<?php echo $web_root ?>/incident/viprfinance.php" class="subnavChild">VIPR Finance
+                            Copies</a>
+                    </li>
+                    <li class="last">
+                        <a href="<?php echo $web_root; ?>/incident/viprreports.php" class="subnavChild">VIPR Reports</a>
+                    </li>
+                </ul>
+            </div>
+        </li>
+        <li><a href="#">Jobs</a></li>
+    </ul>
+
+</nav>
+<div class="content">
+    <div class="leadImage valley">
+        <div class="details">
+            <p>
+                Photo Credit: <a href="https://www.flickr.com/photos/7202153@N03/459434669/">Al_HikesAZ</a> via <a
+                    href="http://compfight.com">Compfight</a> <a href="https://creativecommons.org/licenses/by-nc/2.0/">cc</a>
+            </p>
         </div>
     </div>
-    <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
-    <script src="js/jquery.velocity.min.js"></script>
-    <script src="js/velocity.ui.js"></script>
-    <script src='js/modernizr.custom.50790.js'></script>
-    <script src="js/menu.js"></script>
+    <article>
+        <p>
+            Welcome to our Washington Office Acquisition Management internet site. Our staff provides policy, oversight
+            and operational support in the areas of Acquisition, Property Management, and Grants and Agreements. We
+            provide centralized acquisition support for the Forest Service IT program and for Incident (Fire) resources
+            such as Aircraft, contracted Fire Crews, Caterers and Showers.
+        </p>
+
+        <p>
+            Operational support also includes general Acquisition and Grants and Agreements support for Forest Service
+            Headquarters staffs, property surveys and disposal, and Washington Office facilities management.
+        </p>
+
+        <p>
+            We know working with your Government can be challenging. Check out our getting started checklist for
+            becoming a contractor.
+        </p>
+    </article>
+    <sidebar>
+
+    </sidebar>
+</div>
+<script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script src="js/jquery.velocity.min.js"></script>
+<script src="js/velocity.ui.js"></script>
+<script src='js/modernizr.custom.50790.js'></script>
+<script src="js/menu.js"></script>
 </body>
 </html>
