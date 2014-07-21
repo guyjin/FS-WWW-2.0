@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>U.S. Forest Service - Business Operations</title>
+    <base href="/business/2/proto1/">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <!--[if lte IE 9]>
+        <link rel="stylesheet" href="css/oldIE.css">
+    <![endif]-->
+</head>
+<body lang="en">
+    <div class="flexcontainer">
+        <div class="sidebar">
+            <div class="header">
+                <div class="shield">
+
+                </div>
+                <div class="usfs">U.S. Forest Service</div>
+            </div>
+            <div class="nav">
+                <ul>
+                    <li><a href="/index.php">Home</a></li>
+                    <li><a href="/abs/index.php">Aviation Business System</a></li>
+                    <li><a href="/grants/index.php">Grants &amp; Agreements</a></li>
+                    <li><a href="/incident/index.php">Incident Procurement</a></li>
+                    <li><a href="/jobsoverview.php">Jobs</a></li>
+                </ul>
+            </div>
+            <div class="footer">
+                <span class="siteInfoLink">
+                    <span class="glyphicon glyphicon-cog"></span>
+
+                    Site &amp; Page details
+                </span>
+            </div>
+        </div>
+        <div class="content">
+            <div class="titlebar">
+                Acquistion Management - Business
+            </div>
+            <div class="main">
+               <div class="wideBlock photobg dark">
+
+                    <p>
+                        Welcome to our Washington Office Acquisition Management internet site. Our staff provides policy, oversight and operational support in the areas of Acquisition, Property Management, and Grants and Agreements. We provide centralized acquisition support for the Forest Service IT program and for Incident (Fire) resources such as Aircraft, contracted Fire Crews, Caterers and Showers.
+                    </p>
+                    <p>
+                        Operational support also includes general Acquisition and Grants and Agreements support for Forest Service Headquarters staffs, property surveys and disposal, and Washington Office facilities management.
+                    </p>
+                    <p>
+                        We know working with your Government can be challenging. Check out our getting started checklist for becoming a contractor.
+                    </p>
+                    <a href="#" class="outlineBtn">
+                        Working with the Forest Service
+                        <span class="fineprint">
+                            Contracting Brochure
+                        </span>
+                    </a>
+               </div>
+               <div class="wideBlock letter">
+                   <h2>
+                       Special Notice: USDA Forest Service Electronic Invoicing Requirement
+                   </h2>
+                   <p>
+                       This special notice is being issued to inform current and future vendors of the United States Department of Agriculture (USDA) Forest Service (FS) of the implementation of an electronic Internet Payment Platform (IPP) beginning February 24, 2014.
+                    </p>
+                    <p>
+                       Beginning February 24, 2014, the Forest Service will require the use of IPP for the electronic submittal of invoices and exchange of payment information to its suppliers of goods and services. The use of IPP for submittal of invoices is a mandatory requirement for all new contract awards dated on/after February 24, 2014 with the Forest Service for general supplies, services, construction, and A&amp;E. At this time there are no changes for submitting fire, incident, grant or agreement invoices.
+                    </p>
+                    <p>
+                       The IPP enables vendors to create invoices directly from the contract award and submit invoices electronically to the Forest Service. The IPP also provides vendors on-line access to invoice status and payment information for all government payments; not only those invoiced via IPP, including offset and partial payments. Please visit the IPP website at https://www.ipp.gov for questions on the program, contact information, demonstrations, registration, video and seminar schedules. For IPP enrollment questions, please contact the IPP Helpdesk (866-973-3131) or email IPPCustomerSupport@fms.treas.gov for assistance.
+                    </p>
+                    <p>
+                       The U.S. Department of the Treasury's Financial Management Service (FMS), in partnership with the Federal Reserve Bank of Boston (FRBB), a fiscal agent of the U.S. Treasury, is offering the IPP service for use by Federal government agencies and their suppliers. The IPP is a new service provided by the FMS to assist the Forest Service and its vendors in streamlining the order-to-pay process. The IPP is available through FMS at no cost to Forest Service vendors.
+                   </p>
+               </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script>window.jQuery || document.write('<script src="js/jquery-1.11.1.min.js">\x3C/script>')</script>
+</body>
+</html>
