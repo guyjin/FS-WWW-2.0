@@ -82,12 +82,6 @@ body {
                             text-decoration: none;
                             color: #4cc2ff;
                         }
-
-                        &[aria-selected="true"] {
-                            background-color: $darkaccent;
-                            text-decoration: none;
-                            color: $menuAccent;
-                        }
                     }
                   }
 
@@ -222,10 +216,15 @@ body {
                 }
             }
         }
+    }
 
-
-
-
+    &.home a.topLevelLink#homeLink,
+    &.abs a.topLevelLink#absLink,
+    &.ga a.topLevelLink#gaLink,
+    &.inc a.topLevelLink#incLink,
+    &.jobs a.topLevelLink#jobsLink {
+        background-color: $darkaccent;
+        color: $menuAccent
     }
 
 }

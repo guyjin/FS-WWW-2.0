@@ -99,11 +99,6 @@ body .flexcontainer .sidebar nav > ul > li > a:hover {
   text-decoration: none;
   color: #4cc2ff;
 }
-body .flexcontainer .sidebar nav > ul > li > a[aria-selected="true"] {
-  background-color: #1e1e1e;
-  text-decoration: none;
-  color: #9cfe01;
-}
 body .flexcontainer .sidebar footer {
   display: flex;
   justify-content: center;
@@ -207,4 +202,8 @@ body .flexcontainer .buttonBox .outlineBtn:hover {
   -webkit-transform: scale(1.1, 1.1);
   /* Chrome, Safari, Opera */
   transform: scale(1.1, 1.1);
+}
+body.home a.topLevelLink#homeLink, body.abs a.topLevelLink#absLink, body.ga a.topLevelLink#gaLink, body.inc a.topLevelLink#incLink, body.jobs a.topLevelLink#jobsLink {
+  background-color: #1e1e1e;
+  color: #9cfe01;
 }
