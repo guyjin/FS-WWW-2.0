@@ -70,7 +70,6 @@ body .flexcontainer .sidebar .header .usfs {
   padding-left: 10px;
   box-sizing: border-box;
   font-family: open_sanssemibold;
-  font-size: 14px;
 }
 body .flexcontainer .sidebar nav {
   flex: 1;
@@ -89,9 +88,9 @@ body .flexcontainer .sidebar nav > ul > li > a {
   display: block;
   color: #fff;
   font-family: open_sanssemibold;
-  font-size: 13px;
+  font-size: 14px;
   padding-left: 15px;
-  line-height: 2.7em;
+  line-height: 2.8em;
   transition: all .25s ease;
 }
 body .flexcontainer .sidebar nav > ul > li > a:hover {
@@ -103,10 +102,11 @@ body .flexcontainer .sidebar footer {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 30px;
-  font-size: 10px;
+  height: 36px;
+  font-size: 14px;
   font-family: open_sanssemibold;
   color: #fff;
+  position: relative;
 }
 body .flexcontainer .sidebar footer .siteInfoLink {
   color: #fff;
@@ -118,6 +118,30 @@ body .flexcontainer .sidebar footer .glyphicon {
 body .flexcontainer .sidebar footer:hover {
   cursor: pointer;
 }
+body .flexcontainer .sidebar footer .siteDrawer {
+  position: absolute;
+  bottom: 0px;
+  left: 0;
+  width: 100%;
+  background-color: #ccc;
+  transition: all .5s ease;
+  padding: 10px;
+  box-sizing: border-box;
+  font-family: open_sansregular;
+}
+body .flexcontainer .sidebar footer .siteDrawer ul, body .flexcontainer .sidebar footer .siteDrawer li {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+body .flexcontainer .sidebar footer .siteDrawer a {
+  font-size: 13px;
+  font-weight: normal;
+}
+body .flexcontainer .sidebar footer .siteDrawer .address {
+  color: #1e1e1e;
+  font-size: 13px;
+}
 body .flexcontainer .content {
   display: flex;
   flex-direction: column;
@@ -128,7 +152,7 @@ body .flexcontainer .content {
 }
 body .flexcontainer .content .titlebar {
   background-color: #e9e9e9;
-  font-size: 14px;
+  font-size: 16px;
   color: #000;
   line-height: 60px;
   display: flex;
@@ -143,23 +167,20 @@ body .flexcontainer .content .main {
 body .flexcontainer .content .wideBlock {
   width: 100%;
   padding: 55px;
-  font-size: 12px;
+  font-size: 14px;
   line-height: 2;
 }
 body .flexcontainer .content .wideBlock h2 {
   text-align: center;
 }
 body .flexcontainer .content .photobg {
-  background-image: url(../img/rivervalley_lowres.jpg);
+  background-image: url(../img/rivervalley_lowres_blue.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   color: #fff;
 }
 body .flexcontainer .content .letter {
   background: transparent url(../img/halftone.png) repeat top left;
-}
-body .flexcontainer .content .letter p {
-  font-size: 10px;
 }
 body .flexcontainer .buttonBox {
   display: flex;

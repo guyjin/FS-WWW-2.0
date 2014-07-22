@@ -49,7 +49,6 @@ body {
                     padding-left: 10px;
                     box-sizing: border-box;
                     font-family: open_sanssemibold;
-                    font-size: 14px;
                 }
             }
 
@@ -72,9 +71,9 @@ body {
                         display:block;
                         color: #fff;
                         font-family: open_sanssemibold;
-                        font-size: 13px;
+                        font-size: 14px;
                         padding-left: 15px;
-                        line-height: 2.7em;
+                        line-height: 2.8em;
                         transition: all .25s ease;
 
                         &:hover {
@@ -93,10 +92,11 @@ body {
                 display: flex;
                 justify-content: center;
                 align-items: center;
-                height: 30px;
-                font-size: 10px;
+                height: 36px;
+                font-size: 14px;
                 font-family: open_sanssemibold;
                 color: #fff;
+                position: relative;
 
                 .siteInfoLink {
                     color: #fff;
@@ -109,6 +109,35 @@ body {
 
                 &:hover {
                     cursor: pointer;
+                }
+
+                .siteDrawer {
+                    position: absolute;
+                    bottom: 0px;
+                    left: 0;
+                    width: 100%;
+                    background-color: #ccc;
+                    transition: all .5s ease;
+                    padding: 10px;
+                    box-sizing: border-box;
+                    font-family: open_sansregular;
+
+                    ul,li {
+                        list-style-type: none;
+                        padding: 0;
+                        margin: 0;
+                    }
+
+                    a {
+                        font-size: 13px;
+                        font-weight: normal;
+                    }
+
+                    .address {
+                        color: $darkaccent;
+                        font-size: 13px;
+
+                    }
                 }
             }
         }
@@ -123,7 +152,7 @@ body {
 
             .titlebar {
                 background-color: $lightgray;
-                font-size: 14px;
+                font-size: 16px;
                 color: #000;
                 line-height: 60px;
                 display: flex;
@@ -142,7 +171,7 @@ body {
                 width: 100%;
 
                 padding: 55px;
-                font-size: 12px;
+                font-size: 14px;
                 line-height: 2;
 
                 h2 {
@@ -152,7 +181,7 @@ body {
             }
 
             .photobg {
-                background-image: url(../img/rivervalley_lowres.jpg);
+                background-image: url(../img/rivervalley_lowres_blue.jpg);
                 background-repeat: no-repeat;
                 background-size: cover;
                 color: #fff;
@@ -160,10 +189,6 @@ body {
 
             .letter {
                 background: transparent url(../img/halftone.png) repeat top left;
-
-                p {
-                    font-size: 10px;
-                }
             }
 
 
