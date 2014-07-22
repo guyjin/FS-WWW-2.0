@@ -63,7 +63,6 @@ body .flexcontainer .sidebar .header {
 body .flexcontainer .sidebar .header .shield {
   width: 30px;
   height: 33px;
-  background: transparent url(../img/shield.png) no-repeat top left;
   margin-left: 15px;
 }
 body .flexcontainer .sidebar .header .usfs {
@@ -73,20 +72,20 @@ body .flexcontainer .sidebar .header .usfs {
   font-family: open_sanssemibold;
   font-size: 14px;
 }
-body .flexcontainer .sidebar .nav {
+body .flexcontainer .sidebar nav {
   flex: 1;
   display: flex;
   padding-top: 10px;
 }
-body .flexcontainer .sidebar .nav ul, body .flexcontainer .sidebar .nav li {
+body .flexcontainer .sidebar nav ul, body .flexcontainer .sidebar nav li {
   list-style-type: none;
   margin: 0;
   padding: 0;
 }
-body .flexcontainer .sidebar .nav > ul {
+body .flexcontainer .sidebar nav > ul {
   width: 100%;
 }
-body .flexcontainer .sidebar .nav > ul > li > a {
+body .flexcontainer .sidebar nav > ul > li > a {
   display: block;
   color: #fff;
   font-family: open_sanssemibold;
@@ -95,12 +94,17 @@ body .flexcontainer .sidebar .nav > ul > li > a {
   line-height: 2.7em;
   transition: all .25s ease;
 }
-body .flexcontainer .sidebar .nav > ul > li > a:hover {
+body .flexcontainer .sidebar nav > ul > li > a:hover {
   background-color: #1e1e1e;
   text-decoration: none;
   color: #4cc2ff;
 }
-body .flexcontainer .sidebar .footer {
+body .flexcontainer .sidebar nav > ul > li > a[aria-selected="true"] {
+  background-color: #1e1e1e;
+  text-decoration: none;
+  color: #9cfe01;
+}
+body .flexcontainer .sidebar footer {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -109,10 +113,14 @@ body .flexcontainer .sidebar .footer {
   font-family: open_sanssemibold;
   color: #fff;
 }
-body .flexcontainer .sidebar .footer .glyphicon {
+body .flexcontainer .sidebar footer .siteInfoLink {
+  color: #fff;
+  text-decoration: none;
+}
+body .flexcontainer .sidebar footer .glyphicon {
   color: #a6a6a6;
 }
-body .flexcontainer .sidebar .footer:hover {
+body .flexcontainer .sidebar footer:hover {
   cursor: pointer;
 }
 body .flexcontainer .content {
@@ -133,17 +141,12 @@ body .flexcontainer .content .titlebar {
   height: 60px;
 }
 body .flexcontainer .content .main {
-  overflow: hidden;
+  overflow-y: auto;
   flex: 1;
-  flex-direction: column;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  -webkit-box-orient: vertical;
-  display: flex;
+  height: 0;
 }
 body .flexcontainer .content .wideBlock {
   width: 100%;
-  flex: 0 1 auto;
   padding: 55px;
   font-size: 12px;
   line-height: 2;
@@ -163,27 +166,45 @@ body .flexcontainer .content .letter {
 body .flexcontainer .content .letter p {
   font-size: 10px;
 }
-body .flexcontainer .outlineBtn {
+body .flexcontainer .buttonBox {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+body .flexcontainer .buttonBox .outlineBtn {
   border: 1px solid #727272;
   background-color: transparent;
   color: #fff;
   font-size: 14px;
   text-align: center;
-  display: block;
-  max-width: 300px;
-  margin: 0 auto;
-  padding: 5px 5px 10px;
+  padding: 10px 20px;
   transition: all .15s ease;
   text-decoration: none;
-  margin-top: 55px;
+  margin: 55px;
 }
-body .flexcontainer .outlineBtn .fineprint {
+body .flexcontainer .buttonBox .outlineBtn .fineprint {
   font-size: 10px;
   display: block;
   text-transform: lowercase;
   line-height: 1;
 }
-body .flexcontainer .outlineBtn:hover {
+body .flexcontainer .buttonBox .outlineBtn.dark {
+  color: #1e1e1e;
+}
+body .flexcontainer .buttonBox .outlineBtn.dark:hover {
+  border-color: #000;
+}
+body .flexcontainer .buttonBox .outlineBtn.small {
+  padding: 5px 10px;
+  font-size: 12px;
+  margin: 25px;
+}
+body .flexcontainer .buttonBox .outlineBtn:hover {
   border-color: #fff;
   cursor: pointer;
+  -ms-transform: scale(1.1, 1.1);
+  /* IE 9 */
+  -webkit-transform: scale(1.1, 1.1);
+  /* Chrome, Safari, Opera */
+  transform: scale(1.1, 1.1);
 }

@@ -15,35 +15,35 @@
 <body lang="en">
     <div class="flexcontainer">
         <div class="sidebar">
-            <div class="header">
+            <header class="header">
                 <div class="shield">
-
+                    <img src="img/shield.png" alt="image of the U.S. Forest Service Badge/Logo" />
                 </div>
                 <div class="usfs">U.S. Forest Service</div>
-            </div>
-            <div class="nav">
-                <ul>
-                    <li><a href="/index.php">Home</a></li>
-                    <li><a href="/abs/index.php">Aviation Business System</a></li>
-                    <li><a href="/grants/index.php">Grants &amp; Agreements</a></li>
-                    <li><a href="/incident/index.php">Incident Procurement</a></li>
-                    <li><a href="/jobsoverview.php">Jobs</a></li>
+            </header>
+            <nav role="navigation">
+                <ul role="menu">
+                    <li role="presentation"><a href="/index.php" role="menuitem" tabindex="1" aria-selected="true">Home</a></li>
+                    <li role="presentation"><a href="/abs/index.php" role="menuitem" tabindex="2" aria-selected="false">Aviation Business System</a></li>
+                    <li role="presentation"><a href="/grants/index.php" role="menuitem" tabindex="3" aria-selected="false">Grants &amp; Agreements</a></li>
+                    <li role="presentation"><a href="/incident/index.php" role="menuitem" tabindex="4" aria-selected="false">Incident Procurement</a></li>
+                    <li role="presentation"><a href="/jobsoverview.php" role="menuitem" tabindex="5" aria-selected="false">Jobs</a></li>
                 </ul>
-            </div>
-            <div class="footer">
-                <span class="siteInfoLink">
+            </nav>
+            <footer role="contentinfo">
+                <a href="#" class="siteInfoLink" tabIndex="6">
                     <span class="glyphicon glyphicon-cog"></span>
 
                     Site &amp; Page details
-                </span>
-            </div>
+                </a>
+            </footer>
         </div>
         <div class="content">
-            <div class="titlebar">
+            <div class="titlebar" role="banner">
                 Acquistion Management - Business
             </div>
-            <div class="main">
-               <div class="wideBlock photobg dark">
+            <div class="main" role="main">
+               <div class="wideBlock photobg">
 
                     <p>
                         Welcome to our Washington Office Acquisition Management internet site. Our staff provides policy, oversight and operational support in the areas of Acquisition, Property Management, and Grants and Agreements. We provide centralized acquisition support for the Forest Service IT program and for Incident (Fire) resources such as Aircraft, contracted Fire Crews, Caterers and Showers.
@@ -54,12 +54,14 @@
                     <p>
                         We know working with your Government can be challenging. Check out our getting started checklist for becoming a contractor.
                     </p>
-                    <a href="#" class="outlineBtn">
-                        Working with the Forest Service
-                        <span class="fineprint">
-                            Contracting Brochure
-                        </span>
-                    </a>
+                    <div class="buttonBox">
+                        <a href="#" class="outlineBtn">
+                            Working with the Forest Service
+                            <span class="fineprint">
+                                Contracting Brochure
+                            </span>
+                        </a>
+                    </div>
                </div>
                <div class="wideBlock letter">
                    <h2>
@@ -77,6 +79,12 @@
                     <p>
                        The U.S. Department of the Treasury's Financial Management Service (FMS), in partnership with the Federal Reserve Bank of Boston (FRBB), a fiscal agent of the U.S. Treasury, is offering the IPP service for use by Federal government agencies and their suppliers. The IPP is a new service provided by the FMS to assist the Forest Service and its vendors in streamlining the order-to-pay process. The IPP is available through FMS at no cost to Forest Service vendors.
                    </p>
+                   <div class="buttonBox">
+                       <a href="" class="outlineBtn dark small">
+                           <img src="img/dot-xls.gif" alt="image of a spreadsheet icon" />
+                           Vendor Awards
+                       </a>
+                   </div>
                </div>
             </div>
         </div>

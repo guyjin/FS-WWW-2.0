@@ -4,6 +4,7 @@ $darkaccent: #1e1e1e;
 $dark: #353535;
 $lightgray: #e9e9e9;
 $mediumgray: #727272;
+$menuAccent: #9cfe01;
 
 html, body {
     height: 100%;
@@ -39,7 +40,7 @@ body {
                 .shield {
                     width: 30px;
                     height: 33px;
-                    background: transparent url(../img/shield.png) no-repeat top left;
+                    // background: transparent url(../img/shield.png) no-repeat top left;
                     margin-left: 15px;
                 }
 
@@ -52,7 +53,7 @@ body {
                 }
             }
 
-            .nav {
+            nav {
                 flex: 1;
                 display: flex;
                 padding-top: 10px;
@@ -81,6 +82,12 @@ body {
                             text-decoration: none;
                             color: #4cc2ff;
                         }
+
+                        &[aria-selected="true"] {
+                            background-color: $darkaccent;
+                            text-decoration: none;
+                            color: $menuAccent;
+                        }
                     }
                   }
 
@@ -88,7 +95,7 @@ body {
                 }
             }
 
-            .footer {
+            footer {
                 display: flex;
                 justify-content: center;
                 align-items: center;
@@ -96,6 +103,11 @@ body {
                 font-size: 10px;
                 font-family: open_sanssemibold;
                 color: #fff;
+
+                .siteInfoLink {
+                    color: #fff;
+                    text-decoration: none;
+                }
 
                 .glyphicon {
                     color: darken(#ffffff, 35%)
@@ -126,18 +138,15 @@ body {
             }
 
             .main {
-                overflow: hidden;
+                overflow-y: auto;
                 flex: 1;
-                flex-direction: column;
-                -webkit-flex-direction: column;
-                -ms-flex-direction: column;
-                -webkit-box-orient: vertical;
-                display: flex;
+
+                height: 0;
             }
 
             .wideBlock {
                 width: 100%;
-                flex: 0 1 auto;
+
                 padding: 55px;
                 font-size: 12px;
                 line-height: 2;
@@ -166,33 +175,55 @@ body {
 
         }
 
-        .outlineBtn {
-            border: 1px solid $mediumgray;
-            background-color: transparent;
-            color: #fff;
-            font-size: 14px;
-            text-align: center;
-            display: block;
-            max-width: 300px;
-            margin: 0 auto;
-            padding: 5px 5px 10px;
-            transition: all .15s ease;
-            text-decoration: none;
-            margin-top: 55px;
+        .buttonBox {
+            display: flex;
+            justify-content: center;
+            align-content: center;
+
+            .outlineBtn {
+                border: 1px solid $mediumgray;
+                background-color: transparent;
+                color: #fff;
+                font-size: 14px;
+                text-align: center;
+                padding: 10px 20px;
+                transition: all .15s ease;
+                text-decoration: none;
+                margin: 55px;
 
 
-            .fineprint {
-                font-size: 10px;
-                display: block;
-                text-transform: lowercase;
-                line-height: 1;
-            }
+                .fineprint {
+                    font-size: 10px;
+                    display: block;
+                    text-transform: lowercase;
+                    line-height: 1;
+                }
 
-            &:hover {
-                border-color: #fff;
-                cursor: pointer;
+                &.dark {
+                    color: $darkaccent;
+
+                    &:hover {
+                        border-color: #000;
+                    }
+                }
+
+                &.small {
+                    padding: 5px 10px;
+                    font-size: 12px;
+                    margin: 25px;
+                }
+
+                &:hover {
+                    border-color: #fff;
+                    cursor: pointer;
+                    -ms-transform: scale(1.1,1.1); /* IE 9 */
+                    -webkit-transform: scale(1.1,1.1); /* Chrome, Safari, Opera */
+                    transform: scale(1.1,1.1);
+                }
             }
         }
+
+
 
 
     }
