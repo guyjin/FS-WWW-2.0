@@ -1,5 +1,4 @@
 @import "fonts";
-@import "bourbon/bourbon";
 
 $darkaccent: #1e1e1e;
 $dark: #353535;
@@ -21,16 +20,20 @@ body {
         min-height: 100vh;
 
         .sidebar {
-            @include display(flex);
-            @include flex-direction(column);
+            display: flex;
             width: 210px;
             background-color: $dark;
             color: #fff;
+            flex-direction: column;
+            -webkit-flex-direction: column;
+            -ms-flex-direction: column;
+            -webkit-box-orient: vertical;
             min-height: 100vh;
+            overflow: hidden;
 
             .header {
-                @include display(flex);
-                @include align-items(center);
+                display: flex;
+                align-items: center;
                 background-color: $darkaccent;
                 height: 60px;
 
@@ -51,8 +54,8 @@ body {
             }
 
             nav {
-                @include flex(1);
-                @include display(flex);
+                flex: 1;
+                display: flex;
                 padding-top: 10px;
 
                 ul,li {
@@ -72,7 +75,7 @@ body {
                         font-size: 14px;
                         padding-left: 15px;
                         line-height: 2.8em;
-                        @include transition(all .25s ease);
+                        transition: all .25s ease;
 
                         &:hover {
                             background-color: $darkaccent;
@@ -87,9 +90,9 @@ body {
             }
 
             footer {
-                @include display(flex);
-                @include justify-content(center);
-                @include align-items(center);
+                display: flex;
+                justify-content: center;
+                align-items: center;
                 height: 36px;
                 font-size: 14px;
                 font-family: open_sanssemibold;
@@ -111,13 +114,13 @@ body {
 
                 .siteDrawer {
                     position: absolute;
-                    bottom: 0px;
+                    bottom: -300px;
                     left: 0;
                     width: 100%;
                     background-color: #ccc;
-                    @include transition(all .5s ease);
-                    padding: 10px;
-                    @include box-sizing(border-box);
+                    transition: all .5s ease;
+                    padding: 15px;
+                    box-sizing: border-box;
                     font-family: open_sansregular;
 
                     ul,li {
@@ -136,39 +139,80 @@ body {
                         font-size: 13px;
 
                     }
+
+                    .siteDrawerHandle {
+                        position: absolute;
+                        width: 20px;
+                        height: 20px;
+                        top: -20px;
+                        right:0;
+                        #siteDrawerHandleLabel {
+                            text-indent: -8999em;
+                            position: absolute;
+                        }
+                        .glyphicon {
+                            color: #000;
+                            background-color: #ccc;
+                            padding: 3px;
+
+                            &.glyphicon-arrow-down {
+                                display: none;
+                            }
+                        }
+
+                        &:hover {
+                            .glyphicon-remove {
+                                display: none;
+                            }
+                            .glyphicon-arrow-down {
+                                display: block;
+                            }
+                        }
+                    }
+
+                    &.opened {
+                        bottom: 0;
+                    }
                 }
             }
         }
 
         .content {
-            @include display(flex);
-            @include flex-direction(column);
-            @include flex(1);
+            display: flex;
+            flex-direction: column;
+            -webkit-flex-direction: column;
+            -ms-flex-direction: column;
+            -webkit-box-orient: vertical;
+            flex: 1;
 
             .titlebar {
                 background-color: $lightgray;
                 font-size: 16px;
                 color: #000;
                 line-height: 60px;
-                @include display(flex);
+                display: flex;
                 padding-left: 25px;
                 height: 60px;
             }
 
             .main {
                 overflow-y: auto;
-                @include flex(1);
+                flex: 1;
+
                 height: 0;
             }
 
             .wideBlock {
                 width: 100%;
+
                 padding: 55px;
                 font-size: 14px;
                 line-height: 2;
+
                 h2 {
                     text-align: center;
                 }
+
             }
 
             .photobg {
@@ -186,9 +230,9 @@ body {
         }
 
         .buttonBox {
-            @include display(flex);
-            @include justify-content(center);
-            @include align-content(center);
+            display: flex;
+            justify-content: center;
+            align-content: center;
 
             .outlineBtn {
                 border: 1px solid $mediumgray;
@@ -197,7 +241,7 @@ body {
                 font-size: 14px;
                 text-align: center;
                 padding: 10px 20px;
-                @include transition(all .15s ease);
+                transition: all .15s ease;
                 text-decoration: none;
                 margin: 55px;
 
@@ -226,7 +270,9 @@ body {
                 &:hover {
                     border-color: #fff;
                     cursor: pointer;
-                    @include transform(scale(1.1,1.1));
+                    -ms-transform: scale(1.1,1.1); /* IE 9 */
+                    -webkit-transform: scale(1.1,1.1); /* Chrome, Safari, Opera */
+                    transform: scale(1.1,1.1);
                 }
             }
         }
