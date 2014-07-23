@@ -1,4 +1,5 @@
 @import "fonts";
+@import "bourbon/bourbon";
 
 $darkaccent: #1e1e1e;
 $dark: #353535;
@@ -20,19 +21,16 @@ body {
         min-height: 100vh;
 
         .sidebar {
-            display: flex;
+            @include display(flex);
+            @include flex-direction(column);
             width: 210px;
             background-color: $dark;
             color: #fff;
-            flex-direction: column;
-            -webkit-flex-direction: column;
-            -ms-flex-direction: column;
-            -webkit-box-orient: vertical;
             min-height: 100vh;
 
             .header {
-                display: flex;
-                align-items: center;
+                @include display(flex);
+                @include align-items(center);
                 background-color: $darkaccent;
                 height: 60px;
 
@@ -53,8 +51,8 @@ body {
             }
 
             nav {
-                flex: 1;
-                display: flex;
+                @include flex(1);
+                @include display(flex);
                 padding-top: 10px;
 
                 ul,li {
@@ -74,7 +72,7 @@ body {
                         font-size: 14px;
                         padding-left: 15px;
                         line-height: 2.8em;
-                        transition: all .25s ease;
+                        @include transition(all .25s ease);
 
                         &:hover {
                             background-color: $darkaccent;
@@ -89,9 +87,9 @@ body {
             }
 
             footer {
-                display: flex;
-                justify-content: center;
-                align-items: center;
+                @include display(flex);
+                @include justify-content(center);
+                @include align-items(center);
                 height: 36px;
                 font-size: 14px;
                 font-family: open_sanssemibold;
@@ -117,9 +115,9 @@ body {
                     left: 0;
                     width: 100%;
                     background-color: #ccc;
-                    transition: all .5s ease;
+                    @include transition(all .5s ease);
                     padding: 10px;
-                    box-sizing: border-box;
+                    @include box-sizing(border-box);
                     font-family: open_sansregular;
 
                     ul,li {
@@ -143,41 +141,34 @@ body {
         }
 
         .content {
-            display: flex;
-            flex-direction: column;
-            -webkit-flex-direction: column;
-            -ms-flex-direction: column;
-            -webkit-box-orient: vertical;
-            flex: 1;
+            @include display(flex);
+            @include flex-direction(column);
+            @include flex(1);
 
             .titlebar {
                 background-color: $lightgray;
                 font-size: 16px;
                 color: #000;
                 line-height: 60px;
-                display: flex;
+                @include display(flex);
                 padding-left: 25px;
                 height: 60px;
             }
 
             .main {
                 overflow-y: auto;
-                flex: 1;
-
+                @include flex(1);
                 height: 0;
             }
 
             .wideBlock {
                 width: 100%;
-
                 padding: 55px;
                 font-size: 14px;
                 line-height: 2;
-
                 h2 {
                     text-align: center;
                 }
-
             }
 
             .photobg {
@@ -195,9 +186,9 @@ body {
         }
 
         .buttonBox {
-            display: flex;
-            justify-content: center;
-            align-content: center;
+            @include display(flex);
+            @include justify-content(center);
+            @include align-content(center);
 
             .outlineBtn {
                 border: 1px solid $mediumgray;
@@ -206,7 +197,7 @@ body {
                 font-size: 14px;
                 text-align: center;
                 padding: 10px 20px;
-                transition: all .15s ease;
+                @include transition(all .15s ease);
                 text-decoration: none;
                 margin: 55px;
 
@@ -235,9 +226,7 @@ body {
                 &:hover {
                     border-color: #fff;
                     cursor: pointer;
-                    -ms-transform: scale(1.1,1.1); /* IE 9 */
-                    -webkit-transform: scale(1.1,1.1); /* Chrome, Safari, Opera */
-                    transform: scale(1.1,1.1);
+                    @include transform(scale(1.1,1.1));
                 }
             }
         }
