@@ -8,6 +8,8 @@
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/bootstrap.css">
   <link rel="stylesheet" href="css/styles.css">
+  <script src="js/jquery-1.11.1.min.js"></script>
+  <script src="js/base.js"></script>
 <!--[if lte IE 9]>
 <link rel="stylesheet" href="css/oldIE.css">
 <![endif]-->
@@ -50,7 +52,9 @@
           </p>
           <hr />
           <a href="http://www.firstgov.gov/">FIRST GOV</a>
-          <span class="siteDrawerHandle">X</span>
+          <span class="siteDrawerHandle"><span id="siteDrawerHandleLabel">X</span>
+          <span class="glyphicon glyphicon-remove"></span>
+          <span class="glyphicon glyphicon-arrow-down"></span>
         </div>
       </footer>
     </div>
