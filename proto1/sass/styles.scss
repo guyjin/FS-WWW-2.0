@@ -1,4 +1,5 @@
 @import "fonts";
+@import "fsColors";
 @import "bourbon/bourbon";
 
 $darkaccent: #1e1e1e;
@@ -6,6 +7,8 @@ $dark: #353535;
 $lightgray: #e9e9e9;
 $mediumgray: #727272;
 $menuAccent: #9cfe01;
+$textAccent: #4cc2ff;
+
 
 html, body {
     height: 100%;
@@ -33,7 +36,7 @@ body {
                 @include display(flex);
                 align-items: center;
                 background-color: $darkaccent;
-                height: 60px;
+                height: 110px;
 
                 .shield {
                     width: 30px;
@@ -45,7 +48,7 @@ body {
                 .usfs {
                     line-height: 30px;
                     padding-left: 10px;
-                    box-sizing: border-box;
+                    @include box-sizing(border-box);
                     font-family: open_sanssemibold;
                 }
             }
@@ -72,12 +75,30 @@ body {
                         font-size: 14px;
                         padding-left: 15px;
                         line-height: 2.8em;
-                        @include transition(all .25s ease);
+                        border-right: 8px solid transparent;
+                        @include transition(all .15s ease);
 
                         &:hover {
                             background-color: $darkaccent;
                             text-decoration: none;
-                            color: #4cc2ff;
+                            color: $textAccent;
+                        }
+                    }
+
+                    .subnavList {
+                        // background-color: lighten($darkaccent, 5%);
+
+                        a {
+                            display: block;
+                            padding: 5px 20px;
+                            font-size: .8em;
+                            color: #fff;
+
+                            &:hover {
+                                text-decoration: none;
+                                background-color: $darkaccent;
+                                color: $textAccent;
+                            }
                         }
                     }
                   }
@@ -192,12 +213,69 @@ body {
             .main {
                 overflow-y: auto;
                 @include flex(1);
-                @include display(flex);
                 height: 0;
 
                 &.mainCols {
                     @include flex-direction(row);
                     @include flex-wrap(nowrap);
+                    @include display(flex);
+                }
+
+                &.fullbg {
+                    background-size: cover;
+                }
+
+                &.contactbg {
+                    background-color: #fff;
+                    background-position: center;
+                    background-repeat: no-repeat;
+                    background-image: url(../img/contactbg.jpg);
+                }
+
+                &.callbg {
+                    background-color: #000;
+                    background-image: url(../img/ironfire.jpg);
+                    color:#000;
+                }
+
+                &.incibg {
+                    background-image: url(../img/mossybark.jpg);
+                    color: #fff;
+                    background-color: #000;
+                }
+
+                .sectionHeader {
+                    text-align: center;
+                    padding: 55px;
+
+                }
+
+                .light {
+                    color: #fff;
+                }
+
+                #absContacts,
+                #absContacts li {
+                    list-style-type: none;
+                    padding: 0;
+                    margin: 0;
+                }
+
+                #absContacts li {
+                    text-align: center;
+                    display: block;
+                    font-size: 24px;
+                    background-color: rgba(0,0,0,0.35);
+
+                    a {
+                        background: transparent;
+                        color: #fff;
+
+                        &:hover {
+                            background-color: rgba(255,255,255,0.5);
+                            text-decoration: none;
+                        }
+                    }
                 }
             }
 
@@ -219,6 +297,61 @@ body {
                 background: red;
             }
 
+            .tabs {
+
+                .sectionHeader {
+                    text-align: left;
+                    padding-bottom: 10px;
+                }
+
+
+               .tabbar {
+                   padding: 5px 5px 0 55px;
+                   @include display(flex);
+
+                   border-bottom: 1px solid #ccc;
+
+
+                   a {
+                      background-color: #d3d3d3;
+                      padding: 10px 20px;
+                      color: #585858;
+                      margin-top: 0px;
+                      display: inline-block;
+                      @include box-sizing(border-box);
+                      text-decoration: none;
+                      margin: 0 2px;
+                      @include transition(all .25s ease);
+
+
+                      &.active {
+                       background-color: #fff;
+                       color: #000;
+                       border: 1px solid #ccc;
+                       border-bottom: transparent;
+                       margin-bottom: -1px;
+
+                       &:hover {
+                           background-color: #fff;
+                           color: #000;
+                       }
+                      }
+
+                      &:hover {
+                       background-color: $darkaccent;
+                       color: #4cc2ff;
+                      }
+                   }
+               }
+
+            }
+
+
+
+            .tabContent {
+                padding: 55px;
+            }
+
 
 
             .wideBlock {
@@ -229,19 +362,39 @@ body {
 
                 h2 {
                     text-align: center;
+                    font-family: open_sansbold;
+                    font-size: 3em;
                 }
 
             }
 
+            .lowBlock {
+                padding: 0;
+            }
+
             .photobg {
-                background-image: url(../img/rivervalley_lowres_blue.jpg);
+                background-image: url(../img/rivervalley_lowres.jpg);
                 background-repeat: no-repeat;
                 background-size: cover;
                 color: #fff;
+
+                &.air3 {
+                    background-image: url(../img/aircraft3.jpg);
+                    background-position-y: -200px;
+                }
             }
 
             .letter {
                 background: transparent url(../img/halftone.png) repeat top left;
+            }
+
+            .colorBlock {
+                background-color: darkolivegreen;
+
+                h2 {
+                    color: #fff;
+
+                }
             }
 
 
@@ -253,7 +406,7 @@ body {
             @include align-content(center);
 
             .outlineBtn {
-                border: 1px solid $mediumgray;
+                border: 1px solid #fff;
                 background-color: transparent;
                 color: #fff;
                 font-size: 14px;
@@ -299,8 +452,14 @@ body {
     &.ga a.topLevelLink#gaLink,
     &.inc a.topLevelLink#incLink,
     &.jobs a.topLevelLink#jobsLink {
-        background-color: $darkaccent;
-        color: $menuAccent
+        border-right-color: $menuAccent;
+        // color: $menuAccent
+
+        &:hover {
+            color: #fff;
+            background-color: transparent;
+            cursor: default;
+        }
     }
 
 }

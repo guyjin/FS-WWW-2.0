@@ -1,37 +1,14 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>U.S. Forest Service - Business Operations</title>
-  <base href="/business/2/proto1/">
-  <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="css/bootstrap.css">
-  <link rel="stylesheet" href="css/styles.css">
-  <script src="js/jquery-1.11.1.min.js"></script>
-  <script src="js/base.js"></script>
-<!--[if lte IE 9]>
-<link rel="stylesheet" href="css/oldIE.css">
-<![endif]-->
+  <base href="/business/2/proto1">
+  <?php include_once 'file'; ?>
 </head>
 <body lang="en" class="abs">
   <div class="flexcontainer">
     <div class="sidebar">
-      <header class="header">
-        <div class="shield">
-          <img src="img/shield.png" alt="image of the U.S. Forest Service Badge/Logo" />
-        </div>
-        <div class="usfs">U.S. Forest Service</div>
-      </header>
-      <nav role="navigation">
-        <ul role="menu">
-          <li role="presentation"><a href="/index.php" role="menuitem" tabindex="1" id="homeLink" class="topLevelLink">Home</a></li>
-          <li role="presentation"><a href="/abs/index.php" role="menuitem" tabindex="2" id="absLink" class="topLevelLink">Aviation Business System</a></li>
-          <li role="presentation"><a href="/grants/index.php" role="menuitem" tabindex="3" id="gaLink" class="topLevelLink">Grants &amp; Agreements</a></li>
-          <li role="presentation"><a href="/incident/index.php" role="menuitem" tabindex="4" id="incLink" class="topLevelLink">Incident Procurement</a></li>
-          <li role="presentation"><a href="/jobsoverview.php" role="menuitem" tabindex="5" id="jobsLink" class="topLevelLink">Jobs</a></li>
-        </ul>
-      </nav>
+
+
       <footer role="contentinfo">
         <a href="#" class="siteInfoLink" tabIndex="6">
           <span class="glyphicon glyphicon-cog"></span>
@@ -62,8 +39,8 @@
       <div class="titlebar" role="banner">
         Acquistion Management - Aviation Business System
       </div>
-      <div class="main " role="main">
-        <div class="block-34">
+      <div class="main" role="main">
+        <div class="wideBlock">
                     <p>
                       The <strong>Aviation Business System (ABS)</strong> is a web based application that
                       will be used by the USDA, Forest Service to electronically document and process all contract
@@ -74,7 +51,7 @@
                       aircraft managers or other designated persons.   From there the following workflow
                       will be followed:
                     </p>
-                    <ul class="bulleted">
+                    <ul>
                       <li>
                         The appropriate Contracting Officer (CO) or designated Contracting Officer's
                         Representative (COR) will review and approve each invoice.
@@ -116,9 +93,99 @@
                       link on this website.
                     </p>
         </div>
-        <div class="block-14">
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi doloribus eum officiis voluptatum, provident reiciendis, facilis, voluptatibus necessitatibus dolorum non et suscipit incidunt autem ad? Odit optio quod nemo fugiat.</p>
+        <div class="wideBlock photobg">
+        <h2>Software Updates</h2>
+          <div class="buttonBox">
+
+            <a href="#" class="outlineBtn">
+              ABS News - June 16, 2010
+
+            </a>
+            <a href="#" class="outlineBtn">
+              ABS Version 2.2 Software Update
+            </a>
+          </div>
         </div>
+        <div class="wideBlock">
+          <h3>Announcements</h3>
+          <p>
+            Please read the "Getting Started" instructions at the bottom of this page before accessing ABS for the first time. Once you have completed the instructions, click on the link at the left of this page labeled 'ABS Application' to access the web based application.
+          </p>
+          <p>
+            The Disconnected Client version of this application is available for use and is intended for users who are frequently assigned in remote areas. Please do not request a download of the Disconnected Client Application if you are assigned in remote locations only occasionally. Please see the "Frequently Asked Questions" (FAQ's) on this website for more information. To access directions for downloading the application, see the "Getting Started" tab below and the "Disconnected Client" Training topic (click on the Training Link on this page).
+          </p>
+          <p>
+            When registering in ABS (see"Getting Started" at the bottom of this page) you MUST select a Role by clicking on the button next to the role you need. You must select only ONE Role.
+          </p>
+          <ul>
+            <li><strong>Data Entry Role</strong> - if you will be entering flight data into ABS</li>
+            <li><strong>CO/COR Role</strong> - if you have been designated as a COR for an aviation contract by the Contracting Officer.  You will be able to enter data, approve and package invoices for the contract.</li>
+            <li><strong>Vendor Role</strong> - if you are a vendor/contractor</li>
+            <li><strong>Helpdesk Role</strong> - DO NOT use this Role </li>
+          </ul>
+        </div>
+        <div class="wideBlock photobg air3">
+        <h2>Registration</h2>
+          <div class="buttonBox">
+            <a href="" class="outlineBtn">ABS FS CO Registration Process</a>
+            <a href="" class="outlineBtn">ABS FS COR Registration Process</a>
+            <a href="" class="outlineBtn">ABS Non-FS COR Registration Process</a>
+          </div>
+        </div>
+
+
+        <div class="tabs" id="absTabs">
+          <h3 class='sectionHeader'>
+            Getting Started
+          </h3>
+          <div class="tabbar">
+            <a href="" class="active" data-tab="tab1">Contractors</a>
+            <a href="" data-tab="tab2">Forest Service</a>
+            <a href="" data-tab="tab3">Non-Forest Service</a>
+            <a href="" data-tab="tab4">Disconnected Version</a>
+          </div>
+        </div>
+        <div class="tabContent">
+          <div class="tab1">
+            <ol>
+              <li>
+                Obtain an e-Authentication ID and password.
+                <ul>
+                  <li>Click on the "ABS Training" link at the upper left of this webpage to review the e-Authentication Training Module.</li>
+                  <li>Click on the USDA e-Authentication link and follow the directions to apply for <span style="color: Red;">Level 1 access as a "customer".</span></li>
+                </ul>
+                <p>
+                  The Level 2 direction on the E-Authentication webpage does <strong>NOT</strong> apply to ABS.
+                </p>
+              </li>
+              <li>
+                Click on the "ABS Training" link to complete the ABS Vendor Training.
+                <ul>
+                  <li>Click on the "ABS Training Module for Vendors" and complete the training.</li>
+                  <li>Click on "Vendor" listed under Training Documentation to print a reference copy of the training.</li>
+                </ul>
+              </li>
+              <li>If you have not received an e-mail with your Personal Identification Number (PIN), request one from your Contracting Officer.</li>
+              <li>
+                 All ABS system users must fill out the registration information the first time you log into ABS. Log into ABS to fill out the registration information after you have received your e-Authentication ID and password. <p class="fineprint note">After filling out the registration, allow two business days for your security
+                 profile to be activated before you log into ABS to review your first payment package.</p>
+              </li>
+              <li>
+                Log into ABS after you have received an e-mail notification that a payment package is awaiting your
+                approval. (You will need your e-Auth ID and password, DUNS, and PIN numbers)
+              </li>
+              <li>Review the package following the procedures in the "Vendor" training.</li>
+            </ol>
+            <p>
+              <strong>If you have any problems navigating in the system to approve your payment package, please review the </strong>
+                                          training and/or call the ABS Help Desk at 1-866-224-7677.
+            </p>
+          </div>
+          <div class="tab2"></div>
+          <div class="tab3"></div>
+          <div class="tab4"></div>
+        </div>
+
 
       </div>
     </div>

@@ -80,7 +80,7 @@ body {
         display: flex;
         align-items: center;
         background-color: #1e1e1e;
-        height: 60px; }
+        height: 110px; }
         body .flexcontainer .sidebar .header .shield {
           width: 30px;
           height: 33px;
@@ -88,6 +88,8 @@ body {
         body .flexcontainer .sidebar .header .usfs {
           line-height: 30px;
           padding-left: 10px;
+          -webkit-box-sizing: border-box;
+          -moz-box-sizing: border-box;
           box-sizing: border-box;
           font-family: open_sanssemibold; }
       body .flexcontainer .sidebar nav {
@@ -119,12 +121,22 @@ body {
             font-size: 14px;
             padding-left: 15px;
             line-height: 2.8em;
-            -webkit-transition: all 0.25s ease;
-            -moz-transition: all 0.25s ease;
-            transition: all 0.25s ease; }
+            border-right: 8px solid transparent;
+            -webkit-transition: all 0.15s ease;
+            -moz-transition: all 0.15s ease;
+            transition: all 0.15s ease; }
             body .flexcontainer .sidebar nav > ul > li > a:hover {
               background-color: #1e1e1e;
               text-decoration: none;
+              color: #4cc2ff; }
+          body .flexcontainer .sidebar nav > ul > li .subnavList a {
+            display: block;
+            padding: 5px 20px;
+            font-size: .8em;
+            color: #fff; }
+            body .flexcontainer .sidebar nav > ul > li .subnavList a:hover {
+              text-decoration: none;
+              background-color: #1e1e1e;
               color: #4cc2ff; }
       body .flexcontainer .sidebar footer {
         display: -webkit-box;
@@ -254,13 +266,6 @@ body {
         -moz-flex: 1;
         -ms-flex: 1;
         flex: 1;
-        display: -webkit-box;
-        display: -moz-box;
-        display: box;
-        display: -webkit-flex;
-        display: -moz-flex;
-        display: -ms-flexbox;
-        display: flex;
         height: 0; }
         body .flexcontainer .content .main.mainCols {
           -webkit-box-orient: horizontal;
@@ -276,7 +281,50 @@ body {
           -webkit-flex-wrap: nowrap;
           -moz-flex-wrap: nowrap;
           -ms-flex-wrap: nowrap;
-          flex-wrap: nowrap; }
+          flex-wrap: nowrap;
+          display: -webkit-box;
+          display: -moz-box;
+          display: box;
+          display: -webkit-flex;
+          display: -moz-flex;
+          display: -ms-flexbox;
+          display: flex; }
+        body .flexcontainer .content .main.fullbg {
+          background-size: cover; }
+        body .flexcontainer .content .main.contactbg {
+          background-color: #fff;
+          background-position: center;
+          background-repeat: no-repeat;
+          background-image: url(../img/contactbg.jpg); }
+        body .flexcontainer .content .main.callbg {
+          background-color: #000;
+          background-image: url(../img/ironfire.jpg);
+          color: #000; }
+        body .flexcontainer .content .main.incibg {
+          background-image: url(../img/mossybark.jpg);
+          color: #fff;
+          background-color: #000; }
+        body .flexcontainer .content .main .sectionHeader {
+          text-align: center;
+          padding: 55px; }
+        body .flexcontainer .content .main .light {
+          color: #fff; }
+        body .flexcontainer .content .main #absContacts,
+        body .flexcontainer .content .main #absContacts li {
+          list-style-type: none;
+          padding: 0;
+          margin: 0; }
+        body .flexcontainer .content .main #absContacts li {
+          text-align: center;
+          display: block;
+          font-size: 24px;
+          background-color: rgba(0, 0, 0, 0.35); }
+          body .flexcontainer .content .main #absContacts li a {
+            background: transparent;
+            color: #fff; }
+            body .flexcontainer .content .main #absContacts li a:hover {
+              background-color: rgba(255, 255, 255, 0.5);
+              text-decoration: none; }
       body .flexcontainer .content .block-34,
       body .flexcontainer .content .block-14 {
         display: -webkit-box;
@@ -310,20 +358,72 @@ body {
         -ms-flex: 1 2 auto;
         flex: 1 2 auto;
         background: red; }
+      body .flexcontainer .content .tabs .sectionHeader {
+        text-align: left;
+        padding-bottom: 10px; }
+      body .flexcontainer .content .tabs .tabbar {
+        padding: 5px 5px 0 55px;
+        display: -webkit-box;
+        display: -moz-box;
+        display: box;
+        display: -webkit-flex;
+        display: -moz-flex;
+        display: -ms-flexbox;
+        display: flex;
+        border-bottom: 1px solid #ccc; }
+        body .flexcontainer .content .tabs .tabbar a {
+          background-color: #d3d3d3;
+          padding: 10px 20px;
+          color: #585858;
+          margin-top: 0px;
+          display: inline-block;
+          -webkit-box-sizing: border-box;
+          -moz-box-sizing: border-box;
+          box-sizing: border-box;
+          text-decoration: none;
+          margin: 0 2px;
+          -webkit-transition: all 0.25s ease;
+          -moz-transition: all 0.25s ease;
+          transition: all 0.25s ease; }
+          body .flexcontainer .content .tabs .tabbar a.active {
+            background-color: #fff;
+            color: #000;
+            border: 1px solid #ccc;
+            border-bottom: transparent;
+            margin-bottom: -1px; }
+            body .flexcontainer .content .tabs .tabbar a.active:hover {
+              background-color: #fff;
+              color: #000; }
+          body .flexcontainer .content .tabs .tabbar a:hover {
+            background-color: #1e1e1e;
+            color: #4cc2ff; }
+      body .flexcontainer .content .tabContent {
+        padding: 55px; }
       body .flexcontainer .content .wideBlock {
         width: 100%;
         padding: 55px;
         font-size: 14px;
         line-height: 2; }
         body .flexcontainer .content .wideBlock h2 {
-          text-align: center; }
+          text-align: center;
+          font-family: open_sansbold;
+          font-size: 3em; }
+      body .flexcontainer .content .lowBlock {
+        padding: 0; }
       body .flexcontainer .content .photobg {
-        background-image: url(../img/rivervalley_lowres_blue.jpg);
+        background-image: url(../img/rivervalley_lowres.jpg);
         background-repeat: no-repeat;
         background-size: cover;
         color: #fff; }
+        body .flexcontainer .content .photobg.air3 {
+          background-image: url(../img/aircraft3.jpg);
+          background-position-y: -200px; }
       body .flexcontainer .content .letter {
         background: transparent url(../img/halftone.png) repeat top left; }
+      body .flexcontainer .content .colorBlock {
+        background-color: darkolivegreen; }
+        body .flexcontainer .content .colorBlock h2 {
+          color: #fff; }
     body .flexcontainer .buttonBox {
       display: -webkit-box;
       display: -moz-box;
@@ -346,7 +446,7 @@ body {
       align-content: center;
       -ms-flex-line-pack: center; }
       body .flexcontainer .buttonBox .outlineBtn {
-        border: 1px solid #727272;
+        border: 1px solid #fff;
         background-color: transparent;
         color: #fff;
         font-size: 14px;
@@ -379,5 +479,8 @@ body {
           -o-transform: scale(1.1, 1.1);
           transform: scale(1.1, 1.1); }
   body.home a.topLevelLink#homeLink, body.abs a.topLevelLink#absLink, body.ga a.topLevelLink#gaLink, body.inc a.topLevelLink#incLink, body.jobs a.topLevelLink#jobsLink {
-    background-color: #1e1e1e;
-    color: #9cfe01; }
+    border-right-color: #9cfe01; }
+    body.home a.topLevelLink#homeLink:hover, body.abs a.topLevelLink#absLink:hover, body.ga a.topLevelLink#gaLink:hover, body.inc a.topLevelLink#incLink:hover, body.jobs a.topLevelLink#jobsLink:hover {
+      color: #fff;
+      background-color: transparent;
+      cursor: default; }

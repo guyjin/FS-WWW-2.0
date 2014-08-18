@@ -1,0 +1,5 @@
+# *nix: "/path1:/path2"
+# php_value include_path = ".:/usr/share/php:/usr/local/lib/Smarty-v.e.r/libs/"
+
+# Windows: "\path1;\path2"
+php_value include_path  ".;c:\php5\;c:\apache2\htdocs\business\2\proto1\Smarty-3.1.19\libs\"

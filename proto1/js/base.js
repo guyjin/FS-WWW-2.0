@@ -5,7 +5,8 @@ $(document).ready(function() {
 var aqm = {
 
 	setListeners:function() {
-		$('.siteInfoLink').on('click', function() {
+		$('.siteInfoLink').on('click', function(event) {
+			event.preventDefault();
 			aqm.openSiteDrawer();
 		});
 
