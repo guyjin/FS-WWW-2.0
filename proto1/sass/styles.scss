@@ -17,6 +17,7 @@ html, body {
 body {
     font-family: open_sansregular;
     transition: all .15s ease;
+    text-rendering: optimizeLegibility;
 
     .flexcontainer {
         @include display(flex);
@@ -35,14 +36,39 @@ body {
             .header {
                 @include display(flex);
                 align-items: center;
+                @include flex-flow(column);
                 background-color: $darkaccent;
-                height: 110px;
+
+                .usda {
+                    background-color: $fs_one;
+                    background: $fs_one url("../img/small_topo.gif") no-repeat top left;
+                    font-size: 11px;
+                    font-family: "Rokkitt", Georgia, serif;
+                    color: $fs_three;
+                    width: 100%;
+                    line-height: 33px;
+                    text-align: center;
+                    @include display(flex);
+                    @include flex(auto);
+                    @include justify-content(center);
+
+                }
 
                 .shield {
-                    width: 30px;
-                    height: 33px;
-                    // background: transparent url(../img/shield.png) no-repeat top left;
-                    margin-left: 15px;
+                    width: 100%;
+                    height: em(125);
+                    background-color: $fs_two;
+                    font-family: "Rokkitt", Georgia, sans-serif;
+                    font-size: 16px;
+                    @include display(flex);
+                    @include flex(auto);
+                    @include justify-content(center);
+                    @include align-items(center);
+
+                    img {
+                        margin-right: 10px;
+                    }
+
                 }
 
                 .usfs {
@@ -56,6 +82,7 @@ body {
             nav {
                 @include flex(1);
                 @include display(flex);
+                background-color: $fs_three;
                 padding-top: 10px;
 
                 ul,li {
@@ -72,7 +99,7 @@ body {
                         display:block;
                         color: #fff;
                         font-family: open_sanssemibold;
-                        font-size: 14px;
+                        font-size: 12px;
                         padding-left: 15px;
                         line-height: 2.8em;
                         border-right: 8px solid transparent;
@@ -199,21 +226,83 @@ body {
             @include display(flex);
             @include flex-direction(column);
             @include flex(1);
+            @include align-items(center);
+            @include justify-content(flex-start);
+
 
             .titlebar {
-                background-color: $lightgray;
-                font-size: 16px;
                 color: #000;
-                line-height: 60px;
                 @include display(flex);
-                padding-left: 25px;
-                height: 60px;
+                @include justify-content(center);
+                padding: 6vh 10vh 5vh 10vh;
+                width: 100%;
+
+
+                h1 {
+                    font-size: 18px;
+                    font-family: "Rokkitt", Georgia, sans-serif;
+                    font-weight: bold;
+                    width: 100%;
+                    max-width: 800px;
+                    text-rendering: optimizeLegibility;
+                    margin: 0;
+                }
             }
 
-            .main {
-                overflow-y: auto;
-                @include flex(1);
-                height: 0;
+            .breadcrumbs {
+                @include display(flex);
+                @include justify-content(center);
+                width: 100%;
+                margin-bottom: 40px;
+                padding: 0 10vh 1vh 10vh;
+
+                ul,li {
+                    margin: 0;
+                    padding: 0;
+                    list-style-type: none;
+                }
+
+                ul {
+                    width: 100%;
+                    max-width: 800px;
+                }
+
+                li {
+                    display: inline-block;
+
+                    a {
+                        font-size: 9px;
+                        color: #000;
+                        text-transform: capitalize;
+                        line-height: 1;
+                        padding: 0;
+                        margin:0;
+
+                        &:after {
+                            content: " > ";
+                        }
+
+                        &:hover {
+                            text-decoration: none;
+                        }
+                    }
+
+                    &:last-child {
+                        a:after {
+                            content: "";
+                        }
+                    }
+                }
+            }
+
+            .article {
+
+                max-width: 800px;
+                width: 100%;
+                display: flex;
+                flex-flow: column;
+                align-items: center;
+                padding: 10vh;
 
                 &.mainCols {
                     @include flex-direction(row);
@@ -222,6 +311,7 @@ body {
                 }
 
                 &.fullbg {
+                    max-width: 100%;
                     background-size: cover;
                 }
 
@@ -242,6 +332,11 @@ body {
                     background-image: url(../img/mossybark.jpg);
                     color: #fff;
                     background-color: #000;
+                }
+
+                &>div {
+                    max-width: 800px;
+                    width: 100%;
                 }
 
                 .sectionHeader {
@@ -452,7 +547,7 @@ body {
     &.ga a.topLevelLink#gaLink,
     &.inc a.topLevelLink#incLink,
     &.jobs a.topLevelLink#jobsLink {
-        border-right-color: $menuAccent;
+        border-right-color: $fs_four;
         // color: $menuAccent
 
         &:hover {

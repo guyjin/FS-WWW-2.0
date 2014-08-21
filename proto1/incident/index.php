@@ -17,11 +17,15 @@
 <body lang="en" class="inc">
   <div class="flexcontainer">
     <div class="sidebar">
+
       <header class="header">
+        <div class="usda">
+          United States Department of Agriculture
+        </div>
         <div class="shield">
           <img src="img/shield.png" alt="image of the U.S. Forest Service Badge/Logo" />
+          U.S. Forest Service
         </div>
-        <div class="usfs">U.S. Forest Service</div>
       </header>
       <nav role="navigation">
         <ul role="menu">
@@ -173,10 +177,20 @@
     </div>
     <div class="content">
       <div class="titlebar" role="banner">
-        Acquistion Management - Incident Procurement
+        <h1>Acquistion Management - Incident Procurement</h1>
       </div>
-      <div class="main fullbg incibg" role="main">
-        <div class="wideBlock">
+      <div class="breadcrumbs">
+        <ul>
+          <li>
+            <a href="index.php">Home</a>
+          </li>
+          <li>
+            <a href="incident/">Incident Procurement</a>
+          </li>
+        </ul>
+      </div>
+      <div class="article fullbg incibg" role="article">
+        <div >
           <p>Welcome to the Incident Procurement website serving our interagency partners and current or potential vendors. Please click on one of the portal links provided below so we can help you find what you are looking for.</p>
 
           <p>Find information about working with the Forest Service. If you're already a current Forest Service vendor, get information about the tools you need to use to manage your contracts.</p>
@@ -184,7 +198,7 @@
 
         <div class="buttonBox"><a href="vendors.php" class="outlineBtn">Vendors</a></div>
       </div>
-      <div class="wideBlock">
+      <div class="article mainCols">
         <h2>Resources</h2>
           <a href="incident/contacts.php" class="section">Contacts
             <span class="caption">
@@ -209,7 +223,7 @@
 
       </div>
       <hr />
-      <div class="wideBlock">
+      <div class="article">
         <h2>Systems</h2>
           VIPR
           Incident Procurement System for preseason agreements and contracts.

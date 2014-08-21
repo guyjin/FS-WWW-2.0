@@ -1,0 +1,63 @@
+.usdaheader {
+    width: 100%;
+    display: flex;
+    z-index: 3;
+    position: fixed;
+    background-color: #f1f1d7;
+    background: #f1f1d7 url(../img/topo_bg.png) no-repeat center;
+    background-size: cover;
+    height: 75px;
+    flex-flow: column;
+    padding: 5px 10px 0px;
+    box-sizing: content-box;
+
+    .logos {
+        background: transparent url("../img/logo_shield_brown.png") no-repeat 50px 0px;
+        display: flex;
+        flex: auto;
+
+        .usda {
+            width: 42px;
+            height: 29px;
+            margin-top: 5px;
+
+            a {
+                display: block;
+                width: 42px;
+                height: 29px;
+                text-indent: -9999em;
+                background: url("../img/usda_logo_color.gif") no-repeat top left;
+            }
+        }
+
+        .tagLine {
+            margin-left: 55px;
+
+            h1 {
+                font-family: "Rokkitt";
+                font-size: 20px;
+                margin: 3px 0 0 0 ;
+                padding: 0;
+                line-height: 1;
+            }
+            p {
+                color: #989890;
+                font-size: 12px;
+                margin: 0;
+                font-weight: 800;
+                font-family: "Rokkitt";
+            }
+        }
+    }
+
+    .ownership {
+        min-height: rem(50);
+
+        p {
+            margin: 0;
+            font-weight: 700;
+            color: #989890;
+            font-size: 13px;
+        }
+    }
+}

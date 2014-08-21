@@ -31,7 +31,8 @@ html, body {
 
 body {
   font-family: open_sansregular;
-  transition: all .15s ease; }
+  transition: all .15s ease;
+  text-rendering: optimizeLegibility; }
   body .flexcontainer {
     display: -webkit-box;
     display: -moz-box;
@@ -79,12 +80,82 @@ body {
         display: -ms-flexbox;
         display: flex;
         align-items: center;
-        background-color: #1e1e1e;
-        height: 110px; }
+        -webkit-flex-flow: column;
+        -moz-flex-flow: column;
+        flex-flow: column;
+        background-color: #1e1e1e; }
+        body .flexcontainer .sidebar .header .usda {
+          background-color: #f1f1d7;
+          background: #f1f1d7 url("../img/small_topo.gif") no-repeat top left;
+          font-size: 11px;
+          font-family: "Rokkitt", Georgia, serif;
+          color: #5c5753;
+          width: 100%;
+          line-height: 33px;
+          text-align: center;
+          display: -webkit-box;
+          display: -moz-box;
+          display: box;
+          display: -webkit-flex;
+          display: -moz-flex;
+          display: -ms-flexbox;
+          display: flex;
+          -webkit-box-flex: auto;
+          -moz-box-flex: auto;
+          box-flex: auto;
+          -webkit-flex: auto;
+          -moz-flex: auto;
+          -ms-flex: auto;
+          flex: auto;
+          -webkit-box-pack: center;
+          -moz-box-pack: center;
+          box-pack: center;
+          -webkit-justify-content: center;
+          -moz-justify-content: center;
+          -ms-justify-content: center;
+          -o-justify-content: center;
+          justify-content: center;
+          -ms-flex-pack: center; }
         body .flexcontainer .sidebar .header .shield {
-          width: 30px;
-          height: 33px;
-          margin-left: 15px; }
+          width: 100%;
+          height: 7.8125em;
+          background-color: #2e1e11;
+          font-family: "Rokkitt", Georgia, sans-serif;
+          font-size: 16px;
+          display: -webkit-box;
+          display: -moz-box;
+          display: box;
+          display: -webkit-flex;
+          display: -moz-flex;
+          display: -ms-flexbox;
+          display: flex;
+          -webkit-box-flex: auto;
+          -moz-box-flex: auto;
+          box-flex: auto;
+          -webkit-flex: auto;
+          -moz-flex: auto;
+          -ms-flex: auto;
+          flex: auto;
+          -webkit-box-pack: center;
+          -moz-box-pack: center;
+          box-pack: center;
+          -webkit-justify-content: center;
+          -moz-justify-content: center;
+          -ms-justify-content: center;
+          -o-justify-content: center;
+          justify-content: center;
+          -ms-flex-pack: center;
+          -webkit-box-align: center;
+          -moz-box-align: center;
+          box-align: center;
+          -webkit-align-items: center;
+          -moz-align-items: center;
+          -ms-align-items: center;
+          -o-align-items: center;
+          align-items: center;
+          -ms-flex-align: center; }
+          body .flexcontainer .sidebar .header .shield img {
+            margin-right: 10px; }
         body .flexcontainer .sidebar .header .usfs {
           line-height: 30px;
           padding-left: 10px;
@@ -107,6 +178,7 @@ body {
         display: -moz-flex;
         display: -ms-flexbox;
         display: flex;
+        background-color: #5c5753;
         padding-top: 10px; }
         body .flexcontainer .sidebar nav ul, body .flexcontainer .sidebar nav li {
           list-style-type: none;
@@ -118,7 +190,7 @@ body {
             display: block;
             color: #fff;
             font-family: open_sanssemibold;
-            font-size: 14px;
+            font-size: 12px;
             padding-left: 15px;
             line-height: 2.8em;
             border-right: 8px solid transparent;
@@ -242,12 +314,27 @@ body {
       -webkit-flex: 1;
       -moz-flex: 1;
       -ms-flex: 1;
-      flex: 1; }
+      flex: 1;
+      -webkit-box-align: center;
+      -moz-box-align: center;
+      box-align: center;
+      -webkit-align-items: center;
+      -moz-align-items: center;
+      -ms-align-items: center;
+      -o-align-items: center;
+      align-items: center;
+      -ms-flex-align: center;
+      -webkit-box-pack: start;
+      -moz-box-pack: start;
+      box-pack: start;
+      -webkit-justify-content: flex-start;
+      -moz-justify-content: flex-start;
+      -ms-justify-content: flex-start;
+      -o-justify-content: flex-start;
+      justify-content: flex-start;
+      -ms-flex-pack: start; }
       body .flexcontainer .content .titlebar {
-        background-color: #e9e9e9;
-        font-size: 16px;
         color: #000;
-        line-height: 60px;
         display: -webkit-box;
         display: -moz-box;
         display: box;
@@ -255,19 +342,75 @@ body {
         display: -moz-flex;
         display: -ms-flexbox;
         display: flex;
-        padding-left: 25px;
-        height: 60px; }
-      body .flexcontainer .content .main {
-        overflow-y: auto;
-        -webkit-box-flex: 1;
-        -moz-box-flex: 1;
-        box-flex: 1;
-        -webkit-flex: 1;
-        -moz-flex: 1;
-        -ms-flex: 1;
-        flex: 1;
-        height: 0; }
-        body .flexcontainer .content .main.mainCols {
+        -webkit-box-pack: center;
+        -moz-box-pack: center;
+        box-pack: center;
+        -webkit-justify-content: center;
+        -moz-justify-content: center;
+        -ms-justify-content: center;
+        -o-justify-content: center;
+        justify-content: center;
+        -ms-flex-pack: center;
+        padding: 6vh 10vh 5vh 10vh;
+        width: 100%; }
+        body .flexcontainer .content .titlebar h1 {
+          font-size: 18px;
+          font-family: "Rokkitt", Georgia, sans-serif;
+          font-weight: bold;
+          width: 100%;
+          max-width: 800px;
+          text-rendering: optimizeLegibility;
+          margin: 0; }
+      body .flexcontainer .content .breadcrumbs {
+        display: -webkit-box;
+        display: -moz-box;
+        display: box;
+        display: -webkit-flex;
+        display: -moz-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: center;
+        -moz-box-pack: center;
+        box-pack: center;
+        -webkit-justify-content: center;
+        -moz-justify-content: center;
+        -ms-justify-content: center;
+        -o-justify-content: center;
+        justify-content: center;
+        -ms-flex-pack: center;
+        width: 100%;
+        margin-bottom: 40px;
+        padding: 0 10vh 1vh 10vh; }
+        body .flexcontainer .content .breadcrumbs ul, body .flexcontainer .content .breadcrumbs li {
+          margin: 0;
+          padding: 0;
+          list-style-type: none; }
+        body .flexcontainer .content .breadcrumbs ul {
+          width: 100%;
+          max-width: 800px; }
+        body .flexcontainer .content .breadcrumbs li {
+          display: inline-block; }
+          body .flexcontainer .content .breadcrumbs li a {
+            font-size: 9px;
+            color: #000;
+            text-transform: capitalize;
+            line-height: 1;
+            padding: 0;
+            margin: 0; }
+            body .flexcontainer .content .breadcrumbs li a:after {
+              content: " > "; }
+            body .flexcontainer .content .breadcrumbs li a:hover {
+              text-decoration: none; }
+          body .flexcontainer .content .breadcrumbs li:last-child a:after {
+            content: ""; }
+      body .flexcontainer .content .article {
+        max-width: 800px;
+        width: 100%;
+        display: flex;
+        flex-flow: column;
+        align-items: center;
+        padding: 10vh; }
+        body .flexcontainer .content .article.mainCols {
           -webkit-box-orient: horizontal;
           -moz-box-orient: horizontal;
           box-orient: horizontal;
@@ -289,40 +432,44 @@ body {
           display: -moz-flex;
           display: -ms-flexbox;
           display: flex; }
-        body .flexcontainer .content .main.fullbg {
+        body .flexcontainer .content .article.fullbg {
+          max-width: 100%;
           background-size: cover; }
-        body .flexcontainer .content .main.contactbg {
+        body .flexcontainer .content .article.contactbg {
           background-color: #fff;
           background-position: center;
           background-repeat: no-repeat;
           background-image: url(../img/contactbg.jpg); }
-        body .flexcontainer .content .main.callbg {
+        body .flexcontainer .content .article.callbg {
           background-color: #000;
           background-image: url(../img/ironfire.jpg);
           color: #000; }
-        body .flexcontainer .content .main.incibg {
+        body .flexcontainer .content .article.incibg {
           background-image: url(../img/mossybark.jpg);
           color: #fff;
           background-color: #000; }
-        body .flexcontainer .content .main .sectionHeader {
+        body .flexcontainer .content .article > div {
+          max-width: 800px;
+          width: 100%; }
+        body .flexcontainer .content .article .sectionHeader {
           text-align: center;
           padding: 55px; }
-        body .flexcontainer .content .main .light {
+        body .flexcontainer .content .article .light {
           color: #fff; }
-        body .flexcontainer .content .main #absContacts,
-        body .flexcontainer .content .main #absContacts li {
+        body .flexcontainer .content .article #absContacts,
+        body .flexcontainer .content .article #absContacts li {
           list-style-type: none;
           padding: 0;
           margin: 0; }
-        body .flexcontainer .content .main #absContacts li {
+        body .flexcontainer .content .article #absContacts li {
           text-align: center;
           display: block;
           font-size: 24px;
           background-color: rgba(0, 0, 0, 0.35); }
-          body .flexcontainer .content .main #absContacts li a {
+          body .flexcontainer .content .article #absContacts li a {
             background: transparent;
             color: #fff; }
-            body .flexcontainer .content .main #absContacts li a:hover {
+            body .flexcontainer .content .article #absContacts li a:hover {
               background-color: rgba(255, 255, 255, 0.5);
               text-decoration: none; }
       body .flexcontainer .content .block-34,
@@ -479,7 +626,7 @@ body {
           -o-transform: scale(1.1, 1.1);
           transform: scale(1.1, 1.1); }
   body.home a.topLevelLink#homeLink, body.abs a.topLevelLink#absLink, body.ga a.topLevelLink#gaLink, body.inc a.topLevelLink#incLink, body.jobs a.topLevelLink#jobsLink {
-    border-right-color: #9cfe01; }
+    border-right-color: #ffc425; }
     body.home a.topLevelLink#homeLink:hover, body.abs a.topLevelLink#absLink:hover, body.ga a.topLevelLink#gaLink:hover, body.inc a.topLevelLink#incLink:hover, body.jobs a.topLevelLink#jobsLink:hover {
       color: #fff;
       background-color: transparent;

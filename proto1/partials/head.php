@@ -1,7 +1,7 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <title>U.S. Forest Service - Business Operations</title>
-  <base href="/business/2/proto1/">
+
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/bootstrap.css">
   <link rel="stylesheet" href="css/styles.css">

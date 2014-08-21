@@ -8,51 +8,7 @@ body {
     font-size: 16px;
     transition: all .15s ease;
 
-    .usdaheader {
-        height: em(75);
-        width: 100%;
-        z-index: 3;
-        position: fixed;
-        box-sizing: border-box;
-        padding: 10px;
-        @include display(flex);
-        background-color: $fs_one;
-        background: $fs_one url(../img/topo_bg.png) no-repeat center;
-        background-size: cover;
-
-        .logos {
-            @include display(flex);
-            background: transparent url("../img/logo_shield_brown.png") no-repeat 50px 0px;
-
-            .usda {
-                a {
-                    display: block;
-                    width: 42px;
-                    height: 29px;
-                    text-indent: -9999em;
-                    background: url("../img/usda_logo_color.gif") no-repeat top left;
-                    margin-top: 5px;
-
-                }
-            }
-
-            .tagLine {
-                margin-left: 55px;
-
-                h1 {
-                    font-family: "Rokkitt";
-                    font-size: 20px;
-                    margin: 0;
-                    padding: 0;
-                    line-height: 1;
-                }
-                p {
-                    color: #ccc;
-                    font-size: 12px;
-                }
-            }
-        }
-    }
+    @import "usdaHeader";
 
     nav {
         @include display(flex);
@@ -101,7 +57,7 @@ body {
         @include justify-content(center);
         @include align-items(center);
         color: #fff;
-        height: em(560);
+        height: em(448);
         background: url("../img/footsteps.jpg") no-repeat center;
         background-size: cover;
         margin-bottom: 200px;

@@ -17,7 +17,6 @@
         <div class="logos">
             <div class="usda">
                 <a href="http://www.usda.gov/">USDA</a>
-
             </div>
             <div class="tagLine">
                 <h1>
@@ -27,13 +26,12 @@
                     Caring for the land and serving people
                 </p>
             </div>
-            <div class="ownership">
-                <p>
-                    United States Department of Agriculture
-                </p>
-            </div>
         </div>
-
+        <div class="ownership">
+            <p>
+                United States Department of Agriculture
+            </p>
+        </div>
     </div>
     <nav>
         <div class="links">

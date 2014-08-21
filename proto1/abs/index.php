@@ -1,14 +1,48 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <base href="/business/2/proto1">
-  <?php include_once 'file'; ?>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>U.S. Forest Service - Business Operations</title>
+  <base href="/business/2/proto1/">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <link rel="stylesheet" href="css/styles.css">
+  <script src="js/jquery-1.11.1.min.js"></script>
+  <script src="js/base.js"></script>
+  <!--[if lte IE 9]>
+  <link rel="stylesheet" href="css/oldIE.css">
+  <![endif]-->
 </head>
 <body lang="en" class="abs">
   <div class="flexcontainer">
     <div class="sidebar">
 
-
+    <header class="header">
+      <div class="shield">
+        <img src="img/shield.png" alt="image of the U.S. Forest Service Badge/Logo" />
+      </div>
+      <div class="usfs">U.S. Forest Service</div>
+    </header>
+    <nav role="navigation">
+            <ul role="menu">
+              <li role="presentation"><a href="index.php" role="menuitem" tabindex="1" id="homeLink" class="topLevelLink">Home</a></li>
+              <li role="presentation"><a href="abs/index.php" role="menuitem" tabindex="2" id="absLink" class="topLevelLink">Aviation Business System</a>
+                <ul class="subnavList">
+                    <li><a href="abs/training.php" class="subnav">ABS Training</a></li>
+                    <li><a href="faq.php" class="subnav">FAQs</a></li>
+                    <li><a href="abs/contacts.php" class="subnav">Points of Contact</a></li>
+                    <li><a href="abs/call.php" class="subnav">Conference Call</a></li>
+                    <li><a href="abs/reports.php" class="subnav">ABS Reports</a></li>
+                    <li class="last"><a href="http://ibs.fs.fed.us/aviation" target="_blank" class="subnav">ABS
+                            Application</a></li>
+                </ul>
+              </li>
+              <li role="presentation"><a href="grants/index.php" role="menuitem" tabindex="3" id="gaLink" class="topLevelLink">Grants &amp; Agreements</a></li>
+              <li role="presentation"><a href="incident/index.php" role="menuitem" tabindex="4" id="incLink" class="topLevelLink">Incident Procurement</a></li>
+              <li role="presentation"><a href="jobsoverview.php" role="menuitem" tabindex="5" id="jobsLink" class="topLevelLink">Jobs</a></li>
+            </ul>
+          </nav>
       <footer role="contentinfo">
         <a href="#" class="siteInfoLink" tabIndex="6">
           <span class="glyphicon glyphicon-cog"></span>
