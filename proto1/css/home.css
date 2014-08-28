@@ -3,83 +3,56 @@ body {
   font-weight: 400;
   font-size: 16px;
   transition: all .15s ease; }
-  body .usdaheader {
-    width: 100%;
-    display: flex;
-    z-index: 3;
-    position: fixed;
-    background-color: #f1f1d7;
-    background: #f1f1d7 url(../img/topo_bg.png) no-repeat center;
-    background-size: cover;
-    height: 75px;
-    flex-flow: column;
-    padding: 5px 10px 0px;
-    box-sizing: content-box; }
-    body .usdaheader .logos {
-      background: transparent url("../img/logo_shield_brown.png") no-repeat 50px 0px;
+  body .flexcontainer {
+    opacity: 0; }
+    body .flexcontainer .usdaheader {
+      width: 100%;
       display: flex;
-      flex: auto; }
-      body .usdaheader .logos .usda {
-        width: 42px;
-        height: 29px;
-        margin-top: 5px; }
-        body .usdaheader .logos .usda a {
-          display: block;
+      z-index: 3;
+      position: fixed;
+      background-color: #f1f1d7;
+      background: #f1f1d7 url(../img/topo_bg.png) no-repeat center;
+      background-size: cover;
+      height: 75px;
+      flex-flow: column;
+      padding: 5px 10px 0px;
+      box-sizing: content-box; }
+      body .flexcontainer .usdaheader .logos {
+        background: transparent url("../img/logo_shield_brown.png") no-repeat 50px 0px;
+        display: flex;
+        flex: auto; }
+        body .flexcontainer .usdaheader .logos .usda {
           width: 42px;
           height: 29px;
-          text-indent: -9999em;
-          background: url("../img/usda_logo_color.gif") no-repeat top left; }
-      body .usdaheader .logos .tagLine {
-        margin-left: 55px; }
-        body .usdaheader .logos .tagLine h1 {
-          font-family: "Rokkitt";
-          font-size: 20px;
-          margin: 3px 0 0 0;
-          padding: 0;
-          line-height: 1; }
-        body .usdaheader .logos .tagLine p {
-          color: #989890;
-          font-size: 12px;
+          margin-top: 5px; }
+          body .flexcontainer .usdaheader .logos .usda a {
+            display: block;
+            width: 42px;
+            height: 29px;
+            text-indent: -9999em;
+            background: url("../img/usda_logo_color.gif") no-repeat top left; }
+        body .flexcontainer .usdaheader .logos .tagLine {
+          margin-left: 55px; }
+          body .flexcontainer .usdaheader .logos .tagLine h1 {
+            font-family: "Rokkitt";
+            font-size: 20px;
+            margin: 3px 0 0 0;
+            padding: 0;
+            line-height: 1; }
+          body .flexcontainer .usdaheader .logos .tagLine p {
+            color: #989890;
+            font-size: 12px;
+            margin: 0;
+            font-weight: 800;
+            font-family: "Rokkitt"; }
+      body .flexcontainer .usdaheader .ownership {
+        min-height: 3.125rem; }
+        body .flexcontainer .usdaheader .ownership p {
           margin: 0;
-          font-weight: 800;
-          font-family: "Rokkitt"; }
-    body .usdaheader .ownership {
-      min-height: 3.125rem; }
-      body .usdaheader .ownership p {
-        margin: 0;
-        font-weight: 700;
-        color: #989890;
-        font-size: 13px; }
-  body nav {
-    display: -webkit-box;
-    display: -moz-box;
-    display: box;
-    display: -webkit-flex;
-    display: -moz-flex;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-    -moz-box-pack: center;
-    box-pack: center;
-    -webkit-justify-content: space-around;
-    -moz-justify-content: space-around;
-    -ms-justify-content: space-around;
-    -o-justify-content: space-around;
-    justify-content: space-around;
-    -ms-flex-pack: center;
-    -webkit-box-flex: 1;
-    -moz-box-flex: 1;
-    box-flex: 1;
-    -webkit-flex: 1;
-    -moz-flex: 1;
-    -ms-flex: 1;
-    flex: 1;
-    background-color: #2e1e11;
-    position: fixed;
-    top: 4.6875em;
-    width: 100%;
-    z-index: 3; }
-    body nav .links {
+          font-weight: 700;
+          color: #989890;
+          font-size: 13px; }
+    body .flexcontainer nav {
       display: -webkit-box;
       display: -moz-box;
       display: box;
@@ -87,10 +60,28 @@ body {
       display: -moz-flex;
       display: -ms-flexbox;
       display: flex;
+      -webkit-box-pack: center;
+      -moz-box-pack: center;
+      box-pack: center;
+      -webkit-justify-content: space-around;
+      -moz-justify-content: space-around;
+      -ms-justify-content: space-around;
+      -o-justify-content: space-around;
+      justify-content: space-around;
+      -ms-flex-pack: center;
+      -webkit-box-flex: 1;
+      -moz-box-flex: 1;
+      box-flex: 1;
+      -webkit-flex: 1;
+      -moz-flex: 1;
+      -ms-flex: 1;
+      flex: 1;
+      background-color: #2e1e11;
+      position: fixed;
+      top: 4.6875em;
       width: 100%;
-      max-width: 600px;
-      height: 2.1875em; }
-      body nav .links a {
+      z-index: 3; }
+      body .flexcontainer nav .links {
         display: -webkit-box;
         display: -moz-box;
         display: box;
@@ -98,159 +89,170 @@ body {
         display: -moz-flex;
         display: -ms-flexbox;
         display: flex;
-        -webkit-box-flex: auto;
-        -moz-box-flex: auto;
-        box-flex: auto;
-        -webkit-flex: auto;
-        -moz-flex: auto;
-        -ms-flex: auto;
-        flex: auto;
-        -webkit-box-align: center;
-        -moz-box-align: center;
-        box-align: center;
-        -webkit-align-items: center;
-        -moz-align-items: center;
-        -ms-align-items: center;
-        -o-align-items: center;
-        align-items: center;
-        -ms-flex-align: center;
-        -webkit-box-pack: center;
-        -moz-box-pack: center;
-        box-pack: center;
-        -webkit-justify-content: center;
-        -moz-justify-content: center;
-        -ms-justify-content: center;
-        -o-justify-content: center;
-        justify-content: center;
-        -ms-flex-pack: center;
-        font-size: 0.6875em;
-        font-weight: 600;
-        color: #fff;
-        text-decoration: none;
-        transition: background 300ms ease; }
-        body nav .links a:hover {
-          background-color: #efefef;
-          text-decoration: underline;
-          color: #2e1e11; }
-  body header {
-    position: relative;
-    top: 6.875em;
-    display: -webkit-box;
-    display: -moz-box;
-    display: box;
-    display: -webkit-flex;
-    display: -moz-flex;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-    -moz-box-pack: center;
-    box-pack: center;
-    -webkit-justify-content: center;
-    -moz-justify-content: center;
-    -ms-justify-content: center;
-    -o-justify-content: center;
-    justify-content: center;
-    -ms-flex-pack: center;
-    -webkit-box-align: center;
-    -moz-box-align: center;
-    box-align: center;
-    -webkit-align-items: center;
-    -moz-align-items: center;
-    -ms-align-items: center;
-    -o-align-items: center;
-    align-items: center;
-    -ms-flex-align: center;
-    color: #fff;
-    height: 28em;
-    background: url("../img/footsteps.jpg") no-repeat center;
-    background-size: cover;
-    margin-bottom: 200px; }
-    body header .title {
-      text-align: center;
-      padding-top: 220px;
-      background: url("../img/big_shield-w-shadow.png") no-repeat top center;
-      width: 197px; }
-  body article {
-    max-width: 600px;
-    width: 100%;
-    margin: 0 auto;
-    font-family: "Open Sans";
-    font-weight: 400;
-    font-size: 16px;
-    margin-bottom: 9.375rem; }
-  body aside {
-    max-width: 600px;
-    width: 100%;
-    margin: 0 auto;
-    margin-bottom: 9.375rem;
-    display: -webkit-box;
-    display: -moz-box;
-    display: box;
-    display: -webkit-flex;
-    display: -moz-flex;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-    -moz-box-pack: center;
-    box-pack: center;
-    -webkit-justify-content: center;
-    -moz-justify-content: center;
-    -ms-justify-content: center;
-    -o-justify-content: center;
-    justify-content: center;
-    -ms-flex-pack: center; }
-    body aside a {
-      max-width: 17.5rem; }
-  body .ghost_btn {
-    border: 1px solid #000;
-    background: transparent;
-    display: -webkit-box;
-    display: -moz-box;
-    display: box;
-    display: -webkit-flex;
-    display: -moz-flex;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-flex: auto;
-    -moz-box-flex: auto;
-    box-flex: auto;
-    -webkit-flex: auto;
-    -moz-flex: auto;
-    -ms-flex: auto;
-    flex: auto;
-    -webkit-box-pack: center;
-    -moz-box-pack: center;
-    box-pack: center;
-    -webkit-justify-content: center;
-    -moz-justify-content: center;
-    -ms-justify-content: center;
-    -o-justify-content: center;
-    justify-content: center;
-    -ms-flex-pack: center;
-    -webkit-box-align: center;
-    -moz-box-align: center;
-    box-align: center;
-    -webkit-align-items: center;
-    -moz-align-items: center;
-    -ms-align-items: center;
-    -o-align-items: center;
-    align-items: center;
-    -ms-flex-align: center;
-    height: 5rem;
-    font-size: 0.75em;
-    color: #000;
-    transition: all 300ms ease; }
-    body .ghost_btn.docicon {
-      padding-left: 16px;
-      background-position-x: 18px; }
-    body .ghost_btn:hover {
-      background-color: #273238;
+        width: 100%;
+        max-width: 600px;
+        height: 2.1875em; }
+        body .flexcontainer nav .links a {
+          display: -webkit-box;
+          display: -moz-box;
+          display: box;
+          display: -webkit-flex;
+          display: -moz-flex;
+          display: -ms-flexbox;
+          display: flex;
+          -webkit-box-flex: auto;
+          -moz-box-flex: auto;
+          box-flex: auto;
+          -webkit-flex: auto;
+          -moz-flex: auto;
+          -ms-flex: auto;
+          flex: auto;
+          -webkit-box-align: center;
+          -moz-box-align: center;
+          box-align: center;
+          -webkit-align-items: center;
+          -moz-align-items: center;
+          -ms-align-items: center;
+          -o-align-items: center;
+          align-items: center;
+          -ms-flex-align: center;
+          -webkit-box-pack: center;
+          -moz-box-pack: center;
+          box-pack: center;
+          -webkit-justify-content: center;
+          -moz-justify-content: center;
+          -ms-justify-content: center;
+          -o-justify-content: center;
+          justify-content: center;
+          -ms-flex-pack: center;
+          font-size: 0.6875em;
+          font-weight: 600;
+          color: #fff;
+          text-decoration: none;
+          transition: background 300ms ease; }
+          body .flexcontainer nav .links a:hover {
+            background-color: #efefef;
+            text-decoration: underline;
+            color: #2e1e11; }
+    body .flexcontainer header {
+      position: relative;
+      top: 6.875em;
+      display: -webkit-box;
+      display: -moz-box;
+      display: box;
+      display: -webkit-flex;
+      display: -moz-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: center;
+      -moz-box-pack: center;
+      box-pack: center;
+      -webkit-justify-content: center;
+      -moz-justify-content: center;
+      -ms-justify-content: center;
+      -o-justify-content: center;
+      justify-content: center;
+      -ms-flex-pack: center;
+      -webkit-box-align: center;
+      -moz-box-align: center;
+      box-align: center;
+      -webkit-align-items: center;
+      -moz-align-items: center;
+      -ms-align-items: center;
+      -o-align-items: center;
+      align-items: center;
+      -ms-flex-align: center;
       color: #fff;
-      text-decoration: none; }
-  body .docicon {
-    padding-left: 20px;
-    background-position: left;
-    background-repeat: no-repeat;
-    background-color: transparent; }
-    body .docicon.docicon_xls {
-      background-image: url("../img/dot-xls.gif"); }
+      height: 28em;
+      background: url("../img/footsteps.jpg") no-repeat center;
+      background-size: cover;
+      margin-bottom: 200px; }
+      body .flexcontainer header .title {
+        text-align: center;
+        padding-top: 220px;
+        background: url("../img/big_shield-w-shadow.png") no-repeat top center;
+        width: 197px; }
+    body .flexcontainer article {
+      max-width: 600px;
+      width: 100%;
+      margin: 0 auto;
+      font-family: "Open Sans";
+      font-weight: 400;
+      font-size: 16px;
+      margin-bottom: 9.375rem; }
+    body .flexcontainer aside {
+      max-width: 600px;
+      width: 100%;
+      margin: 0 auto;
+      margin-bottom: 9.375rem;
+      display: -webkit-box;
+      display: -moz-box;
+      display: box;
+      display: -webkit-flex;
+      display: -moz-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: center;
+      -moz-box-pack: center;
+      box-pack: center;
+      -webkit-justify-content: center;
+      -moz-justify-content: center;
+      -ms-justify-content: center;
+      -o-justify-content: center;
+      justify-content: center;
+      -ms-flex-pack: center; }
+      body .flexcontainer aside a {
+        max-width: 17.5rem; }
+    body .flexcontainer .ghost_btn {
+      border: 1px solid #000;
+      background: transparent;
+      display: -webkit-box;
+      display: -moz-box;
+      display: box;
+      display: -webkit-flex;
+      display: -moz-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-flex: auto;
+      -moz-box-flex: auto;
+      box-flex: auto;
+      -webkit-flex: auto;
+      -moz-flex: auto;
+      -ms-flex: auto;
+      flex: auto;
+      -webkit-box-pack: center;
+      -moz-box-pack: center;
+      box-pack: center;
+      -webkit-justify-content: center;
+      -moz-justify-content: center;
+      -ms-justify-content: center;
+      -o-justify-content: center;
+      justify-content: center;
+      -ms-flex-pack: center;
+      -webkit-box-align: center;
+      -moz-box-align: center;
+      box-align: center;
+      -webkit-align-items: center;
+      -moz-align-items: center;
+      -ms-align-items: center;
+      -o-align-items: center;
+      align-items: center;
+      -ms-flex-align: center;
+      height: 5rem;
+      font-size: 0.75em;
+      color: #000;
+      transition: all 300ms ease; }
+      body .flexcontainer .ghost_btn.docicon {
+        padding-left: 16px;
+        background-position-x: 18px; }
+      body .flexcontainer .ghost_btn:hover {
+        background-color: #273238;
+        color: #fff;
+        text-decoration: none; }
+    body .flexcontainer .docicon {
+      padding-left: 20px;
+      background-position: left;
+      background-repeat: no-repeat;
+      background-color: transparent; }
+      body .flexcontainer .docicon.docicon_xls {
+        background-image: url("../img/dot-xls.gif"); }

@@ -8,124 +8,128 @@ body {
     font-size: 16px;
     transition: all .15s ease;
 
-    @import "usdaHeader";
+    .flexcontainer {
+        opacity: 0;
 
-    nav {
-        @include display(flex);
-        @include justify-content(space-around);
-        @include flex(1);
-        background-color: $fs_two;
-        position: fixed;
-        top: em(75);
-        width: 100%;
-        z-index: 3;
+        @import "usdaHeader";
 
-
-        .links {
-
+        nav {
             @include display(flex);
-
+            @include justify-content(space-around);
+            @include flex(1);
+            background-color: $fs_two;
+            position: fixed;
+            top: em(75);
             width: 100%;
-            max-width: 600px;
-            height: em(35);
+            z-index: 3;
 
 
-            a {
+            .links {
+
                 @include display(flex);
-                @include flex(auto);
-                @include align-items(center);
-                @include justify-content(center);
-                font-size: em(11);
-                font-weight: 600;
-                color: #fff;
-                text-decoration: none;
-                transition: background 300ms ease;
 
-                &:hover {
-                    background-color: #efefef;
-                    text-decoration: underline;
-                    color: $fs_two;
+                width: 100%;
+                max-width: 600px;
+                height: em(35);
+
+
+                a {
+                    @include display(flex);
+                    @include flex(auto);
+                    @include align-items(center);
+                    @include justify-content(center);
+                    font-size: em(11);
+                    font-weight: 600;
+                    color: #fff;
+                    text-decoration: none;
+                    transition: background 300ms ease;
+
+                    &:hover {
+                        background-color: #efefef;
+                        text-decoration: underline;
+                        color: $fs_two;
+                    }
                 }
             }
         }
-    }
 
-    header {
-        position: relative;
-        top: em(110);
-        @include display(flex);
-        @include justify-content(center);
-        @include align-items(center);
-        color: #fff;
-        height: em(448);
-        background: url("../img/footsteps.jpg") no-repeat center;
-        background-size: cover;
-        margin-bottom: 200px;
-
-        .title {
-            text-align: center;
-            padding-top: 220px;
-            background: url("../img/big_shield-w-shadow.png") no-repeat top center;
-            width: 197px;
-        }
-
-    }
-
-    article {
-        max-width: 600px;
-        width: 100%;
-        margin: 0 auto;
-        font-family: "Open Sans";
-        font-weight: 400;
-        font-size: 16px;
-        margin-bottom: rem(150);
-    }
-
-    aside {
-        max-width: 600px;
-        width: 100%;
-        margin: 0 auto;
-        margin-bottom: rem(150);
-        @include display(flex);
-        @include justify-content(center);
-
-        a {
-            max-width: rem(280)
-        }
-    }
-
-    .ghost_btn {
-        border: 1px solid #000;
-        background: transparent;
-        @include display(flex);
-        @include flex(auto);
-        @include justify-content(center);
-        @include align-items(center);
-        height: rem(80);
-        font-size: em(12);
-        color: #000;
-        transition: all 300ms ease;
-
-        &.docicon {
-            padding-left: 16px;
-            background-position-x: 18px;
-        }
-
-        &:hover {
-            background-color: #273238;
+        header {
+            position: relative;
+            top: em(110);
+            @include display(flex);
+            @include justify-content(center);
+            @include align-items(center);
             color: #fff;
-            text-decoration: none;
+            height: em(448);
+            background: url("../img/footsteps.jpg") no-repeat center;
+            background-size: cover;
+            margin-bottom: 200px;
+
+            .title {
+                text-align: center;
+                padding-top: 220px;
+                background: url("../img/big_shield-w-shadow.png") no-repeat top center;
+                width: 197px;
+            }
+
         }
-    }
 
-    .docicon {
-        padding-left: 20px;
-        background-position: left;
-        background-repeat: no-repeat;
-        background-color: transparent;
+        article {
+            max-width: 600px;
+            width: 100%;
+            margin: 0 auto;
+            font-family: "Open Sans";
+            font-weight: 400;
+            font-size: 16px;
+            margin-bottom: rem(150);
+        }
 
-        &.docicon_xls {
-            background-image: url("../img/dot-xls.gif")
+        aside {
+            max-width: 600px;
+            width: 100%;
+            margin: 0 auto;
+            margin-bottom: rem(150);
+            @include display(flex);
+            @include justify-content(center);
+
+            a {
+                max-width: rem(280)
+            }
+        }
+
+        .ghost_btn {
+            border: 1px solid #000;
+            background: transparent;
+            @include display(flex);
+            @include flex(auto);
+            @include justify-content(center);
+            @include align-items(center);
+            height: rem(80);
+            font-size: em(12);
+            color: #000;
+            transition: all 300ms ease;
+
+            &.docicon {
+                padding-left: 16px;
+                background-position-x: 18px;
+            }
+
+            &:hover {
+                background-color: #273238;
+                color: #fff;
+                text-decoration: none;
+            }
+        }
+
+        .docicon {
+            padding-left: 20px;
+            background-position: left;
+            background-repeat: no-repeat;
+            background-color: transparent;
+
+            &.docicon_xls {
+                background-image: url("../img/dot-xls.gif")
+            }
         }
     }
 }

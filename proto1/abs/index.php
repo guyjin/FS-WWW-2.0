@@ -1,133 +1,65 @@
-<!DOCTYPE html>
-<html>
-<head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>U.S. Forest Service - Business Operations</title>
-  <base href="/business/2/proto1/">
-  <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="css/bootstrap.css">
-  <link rel="stylesheet" href="css/styles.css">
-  <script src="js/jquery-1.11.1.min.js"></script>
-  <script src="js/base.js"></script>
-  <!--[if lte IE 9]>
-  <link rel="stylesheet" href="css/oldIE.css">
-  <![endif]-->
-</head>
-<body lang="en" class="abs">
-  <div class="flexcontainer">
-    <div class="sidebar">
-
-    <header class="header">
-      <div class="shield">
-        <img src="img/shield.png" alt="image of the U.S. Forest Service Badge/Logo" />
-      </div>
-      <div class="usfs">U.S. Forest Service</div>
-    </header>
-    <nav role="navigation">
-            <ul role="menu">
-              <li role="presentation"><a href="index.php" role="menuitem" tabindex="1" id="homeLink" class="topLevelLink">Home</a></li>
-              <li role="presentation"><a href="abs/index.php" role="menuitem" tabindex="2" id="absLink" class="topLevelLink">Aviation Business System</a>
-                <ul class="subnavList">
-                    <li><a href="abs/training.php" class="subnav">ABS Training</a></li>
-                    <li><a href="faq.php" class="subnav">FAQs</a></li>
-                    <li><a href="abs/contacts.php" class="subnav">Points of Contact</a></li>
-                    <li><a href="abs/call.php" class="subnav">Conference Call</a></li>
-                    <li><a href="abs/reports.php" class="subnav">ABS Reports</a></li>
-                    <li class="last"><a href="http://ibs.fs.fed.us/aviation" target="_blank" class="subnav">ABS
-                            Application</a></li>
-                </ul>
+<?php
+  $pageTitle = "Aviation Business System";
+  $pageMenu = "abs";
+  $bodyClass = "abs";
+  include_once '../partials/pageStart.php';
+?>
+        <div class="section colorBlock colorBlock2" role="section">
+          <div>
+            <p>
+              The <strong>Aviation Business System (ABS)</strong> is a web based application that
+              will be used by the USDA, Forest Service to electronically document and process all contract
+              aviation costs currently documented on FS-6500-122 Flight Use Invoice (invoice). 
+              A disconnected client, non-web limited component version, of the application is
+              available for remote use.  This new system will require that data will be entered
+              electronically into ABS from the source location (Helibase, Tanker Base, etc) by
+              aircraft managers or other designated persons.   From there the following workflow
+              will be followed:
+            </p>
+            <ul>
+              <li>
+                The appropriate Contracting Officer (CO) or designated Contracting Officer's
+                Representative (COR) will review and approve each invoice.
               </li>
-              <li role="presentation"><a href="grants/index.php" role="menuitem" tabindex="3" id="gaLink" class="topLevelLink">Grants &amp; Agreements</a></li>
-              <li role="presentation"><a href="incident/index.php" role="menuitem" tabindex="4" id="incLink" class="topLevelLink">Incident Procurement</a></li>
-              <li role="presentation"><a href="jobsoverview.php" role="menuitem" tabindex="5" id="jobsLink" class="topLevelLink">Jobs</a></li>
+              <li>
+                The CO or COR will electronically select approved invoices to be packaged for
+                payment and approve the package using a Personal Identification Number (PIN)
+                to indicate approval.
+              </li>
+              <li>
+                After approval by the CO or COR, the vendor will receive notification that a
+                package is ready for approval.
+              </li>
+              <li>
+                After successful review, and application of a PIN by the Vendor, the package
+                will be submitted to the Albuquerque Service Center (ASC) Incident Database
+                (IBDB) for final processing of the payment.
+              </li>
+              <li>
+                If the vendor requests any changes to the payment package the changes will be
+                reviewed by the CO/COR, the changes accepted or rejected and notification of
+                the results sent to the vendor.  The package is then submitted directly
+                to the ASC IBDB for payment.
+              </li>
             </ul>
-          </nav>
-      <footer role="contentinfo">
-        <a href="#" class="siteInfoLink" tabIndex="6">
-          <span class="glyphicon glyphicon-cog"></span>
-          Site &amp; Page details
-        </a>
-        <div class="siteDrawer">
-          <ul>
-            <li><a href="http://www.fs.fed.us/disclaimers.shtml">Disclaimers</a></li>
-            <li><a href="http://www.fs.fed.us/privacy.shtml">Privacy Notice</a></li>
-            <li><a href="http://www.fs.fed.us/im/foia/">Freedom of Information Act</a></li>
-          </ul>
-          <hr />
-          <p class="address">
-            USDA Forest Service<br>
-            P.O. Box 96090<br>
-            Washington , D.C. 20090-6090<br>
-            (202) 205-8333
-          </p>
-          <hr />
-          <a href="http://www.firstgov.gov/">FIRST GOV</a>
-          <span class="siteDrawerHandle"><span id="siteDrawerHandleLabel">X</span>
-          <span class="glyphicon glyphicon-remove"></span>
-          <span class="glyphicon glyphicon-arrow-down"></span>
-        </div>
-      </footer>
-    </div>
-    <div class="content">
-      <div class="titlebar" role="banner">
-        Acquistion Management - Aviation Business System
-      </div>
-      <div class="main" role="main">
-        <div class="wideBlock">
-                    <p>
-                      The <strong>Aviation Business System (ABS)</strong> is a web based application that
-                      will be used by the USDA, Forest Service to electronically document and process all contract
-                      aviation costs currently documented on FS-6500-122 Flight Use Invoice (invoice). 
-                      A disconnected client, non-web limited component version, of the application is
-                      available for remote use.  This new system will require that data will be entered
-                      electronically into ABS from the source location (Helibase, Tanker Base, etc) by
-                      aircraft managers or other designated persons.   From there the following workflow
-                      will be followed:
-                    </p>
-                    <ul>
-                      <li>
-                        The appropriate Contracting Officer (CO) or designated Contracting Officer's
-                        Representative (COR) will review and approve each invoice.
-                      </li>
-                      <li>
-                        The CO or COR will electronically select approved invoices to be packaged for
-                        payment and approve the package using a Personal Identification Number (PIN)
-                        to indicate approval.
-                      </li>
-                      <li>
-                        After approval by the CO or COR, the vendor will receive notification that a
-                        package is ready for approval.
-                      </li>
-                      <li>
-                        After successful review, and application of a PIN by the Vendor, the package
-                        will be submitted to the Albuquerque Service Center (ASC) Incident Database
-                        (IBDB) for final processing of the payment.
-                      </li>
-                      <li>
-                        If the vendor requests any changes to the payment package the changes will be
-                        reviewed by the CO/COR, the changes accepted or rejected and notification of
-                        the results sent to the vendor.  The package is then submitted directly
-                        to the ASC IBDB for payment.
-                      </li>
-                    </ul>
-                              <p>
-                      Access to the system will require an individual USDA eAuthentication account and password
-                      for all users.  In addition, a secure PIN number will be provided to Contracting
-                      Officers (COs) and Contracting Officer Representatives (CORs).  Contractors will be
-                      issued a PIN number by the CO who administers their contracts.  The pin will be
-                      required for electronic approval of payment packages.  In addition each user must
-                      register in ABS the first time they log on.  Please read the step by step
-                      instructions under "Getting Started".
-                    </p>
+                      <p>
+              Access to the system will require an individual USDA eAuthentication account and password
+              for all users.  In addition, a secure PIN number will be provided to Contracting
+              Officers (COs) and Contracting Officer Representatives (CORs).  Contractors will be
+              issued a PIN number by the CO who administers their contracts.  The pin will be
+              required for electronic approval of payment packages.  In addition each user must
+              register in ABS the first time they log on.  Please read the step by step
+              instructions under "Getting Started".
+            </p>
 
-                    <p>
-                      New users can access training by clicking on the
-                      "<a href="http://www.fs.fed.us/business/abs/training.php">ABS Training</a>"
-                      link on this website.
-                    </p>
+            <p>
+              New users can access training by clicking on the
+              "<a href="http://www.fs.fed.us/business/abs/training.php">ABS Training</a>"
+              link on this website.
+            </p>
+          </div>
         </div>
-        <div class="wideBlock photobg">
+        <div class="section photobg">
         <h2>Software Updates</h2>
           <div class="buttonBox">
 
@@ -140,26 +72,28 @@
             </a>
           </div>
         </div>
-        <div class="wideBlock">
-          <h3>Announcements</h3>
-          <p>
-            Please read the "Getting Started" instructions at the bottom of this page before accessing ABS for the first time. Once you have completed the instructions, click on the link at the left of this page labeled 'ABS Application' to access the web based application.
-          </p>
-          <p>
-            The Disconnected Client version of this application is available for use and is intended for users who are frequently assigned in remote areas. Please do not request a download of the Disconnected Client Application if you are assigned in remote locations only occasionally. Please see the "Frequently Asked Questions" (FAQ's) on this website for more information. To access directions for downloading the application, see the "Getting Started" tab below and the "Disconnected Client" Training topic (click on the Training Link on this page).
-          </p>
-          <p>
-            When registering in ABS (see"Getting Started" at the bottom of this page) you MUST select a Role by clicking on the button next to the role you need. You must select only ONE Role.
-          </p>
-          <ul>
-            <li><strong>Data Entry Role</strong> - if you will be entering flight data into ABS</li>
-            <li><strong>CO/COR Role</strong> - if you have been designated as a COR for an aviation contract by the Contracting Officer.  You will be able to enter data, approve and package invoices for the contract.</li>
-            <li><strong>Vendor Role</strong> - if you are a vendor/contractor</li>
-            <li><strong>Helpdesk Role</strong> - DO NOT use this Role </li>
-          </ul>
+        <div class="section">
+          <div>
+            <h2>Announcements</h2>
+            <p>
+              Please read the "Getting Started" instructions at the bottom of this page before accessing ABS for the first time. Once you have completed the instructions, click on the link at the left of this page labeled 'ABS Application' to access the web based application.
+            </p>
+            <p>
+              The Disconnected Client version of this application is available for use and is intended for users who are frequently assigned in remote areas. Please do not request a download of the Disconnected Client Application if you are assigned in remote locations only occasionally. Please see the "Frequently Asked Questions" (FAQ's) on this website for more information. To access directions for downloading the application, see the "Getting Started" tab below and the "Disconnected Client" Training topic (click on the Training Link on this page).
+            </p>
+            <p>
+              When registering in ABS (see"Getting Started" at the bottom of this page) you MUST select a Role by clicking on the button next to the role you need. You must select only ONE Role.
+            </p>
+            <ul>
+              <li><strong>Data Entry Role</strong> - if you will be entering flight data into ABS</li>
+              <li><strong>CO/COR Role</strong> - if you have been designated as a COR for an aviation contract by the Contracting Officer.  You will be able to enter data, approve and package invoices for the contract.</li>
+              <li><strong>Vendor Role</strong> - if you are a vendor/contractor</li>
+              <li><strong>Helpdesk Role</strong> - DO NOT use this Role </li>
+            </ul>
+          </div>
         </div>
-        <div class="wideBlock photobg air3">
-        <h2>Registration</h2>
+        <div class="section photobg air3">
+          <h2>Registration</h2>
           <div class="buttonBox">
             <a href="" class="outlineBtn">ABS FS CO Registration Process</a>
             <a href="" class="outlineBtn">ABS FS COR Registration Process</a>
@@ -168,18 +102,22 @@
         </div>
 
 
-        <div class="tabs" id="absTabs">
-          <h3 class='sectionHeader'>
-            Getting Started
-          </h3>
+        <div class="section tabs" id="absTabs">
+          <div>
+            <h2>
+              Getting Started
+            </h2>
+          </div>
           <div class="tabbar">
-            <a href="" class="active" data-tab="tab1">Contractors</a>
-            <a href="" data-tab="tab2">Forest Service</a>
-            <a href="" data-tab="tab3">Non-Forest Service</a>
-            <a href="" data-tab="tab4">Disconnected Version</a>
+            <div class="tabsrow">
+              <a href="" class="active" data-tab="tab1">Contractors</a>
+              <a href="" data-tab="tab2">Forest Service</a>
+              <a href="" data-tab="tab3">Non-Forest Service</a>
+              <a href="" data-tab="tab4">Disconnected Version</a>
+            </div>
           </div>
         </div>
-        <div class="tabContent">
+        <div class="tabContent section">
           <div class="tab1">
             <ol>
               <li>
@@ -219,13 +157,6 @@
           <div class="tab3"></div>
           <div class="tab4"></div>
         </div>
-
-
-      </div>
-    </div>
-  </div>
-
-  <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
-  <script>window.jQuery || document.write('<script src="js/jquery-1.11.1.min.js">\x3C/script>')</script>
-</body>
-</html>
+<?php
+  include_once '../partials/pageEnd.php';
+?>
