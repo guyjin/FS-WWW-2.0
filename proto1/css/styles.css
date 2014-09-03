@@ -63,6 +63,7 @@ body {
       display: -ms-flexbox;
       display: flex;
       width: 210px;
+      min-width: 210px;
       background-color: #353535;
       color: #fff;
       -webkit-box-orient: vertical;
@@ -89,7 +90,7 @@ body {
         background-color: #1e1e1e; }
         body .flexcontainer .sidebar .header .usda {
           background-color: #f1f1d7;
-          background: #f1f1d7 url("../img/small_topo.gif") no-repeat top left;
+          background: #f1f1d7 url("/business/2/proto1/img/small_topo.gif") no-repeat top left;
           font-size: 11px;
           font-family: "Rokkitt", Georgia, serif;
           color: #5c5753;
@@ -360,7 +361,7 @@ body {
         -o-justify-content: center;
         justify-content: center;
         -ms-flex-pack: center;
-        padding: 15vh 10vh 0;
+        padding: 4em 10vh 0;
         width: 100%; }
         body .flexcontainer .content .titlebar div {
           max-width: 800px;
@@ -386,7 +387,7 @@ body {
         -ms-flex-pack: center;
         width: 100%;
         margin-bottom: 40px;
-        padding: 0 10vh 10vh; }
+        padding: 0 10vh 1em; }
         body .flexcontainer .content .breadcrumbs ul, body .flexcontainer .content .breadcrumbs li {
           margin: 0;
           padding: 0;

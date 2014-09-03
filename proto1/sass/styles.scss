@@ -30,6 +30,7 @@ body {
         .sidebar {
             @include display(flex);
             width: 210px;
+            min-width: 210px;
             background-color: $dark;
             color: #fff;
             @include flex-direction(column);
@@ -44,7 +45,7 @@ body {
 
                 .usda {
                     background-color: $fs_one;
-                    background: $fs_one url("../img/small_topo.gif") no-repeat top left;
+                    background: $fs_one url("/business/2/proto1/img/small_topo.gif") no-repeat top left;
                     font-size: 11px;
                     font-family: "Rokkitt", Georgia, serif;
                     color: $fs_three;
@@ -245,7 +246,7 @@ body {
                 color: #000;
                 @include display(flex);
                 @include justify-content(center);
-                padding: 15vh 10vh 0;
+                padding: 4em 10vh 0;
                 width: 100%;
 
                 div {
@@ -264,7 +265,7 @@ body {
                 @include justify-content(center);
                 width: 100%;
                 margin-bottom: 40px;
-                padding: 0 10vh 10vh;
+                padding: 0 10vh 1em;
 
                 ul,li {
                     margin: 0;

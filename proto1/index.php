@@ -57,11 +57,7 @@
         <aside>
             <a href="#" class="ghost_btn docicon docicon_xls">Contracting Checklist</a>
         </aside>
-    </div>g started checklist for becoming a contractor.</p>
-        </article>
-        <aside>
-            <a href="#" class="ghost_btn docicon docicon_xls">Contracting Checklist</a>
-        </aside>
     </div>
+
 </body>
 </html>

@@ -1,0 +1,161 @@
+@import "fsColors";
+@import "bourbon/bourbon";
+
+body {
+  overflow-y: scroll;
+}
+
+#topics,
+#faqs {
+  padding-top: 0;
+}
+
+.subjects {
+    @include display(flex);
+    overflow: hidden;
+    position: relative;
+
+    .top {
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+        font-size: 12px;
+        @include flex(1.2);
+        box-shadow: 0px 0px 0px rgba(0,0,0,0.5);
+        padding: 1em;
+        background: #efefef;
+
+        li {
+
+          a {
+            font-size: 14px;
+            display: block;
+            border-bottom: 1px dotted lightgray;
+            color: #000;
+            font-family: "Rokkitt", serif;
+            text-align: center;
+            font-weight: bold;
+            line-height: 2.5;
+            transition: all .2s linear;
+
+            &:hover {
+              background: darkgray;
+              color: #fff;
+              text-decoration: none;
+              cursor: pointer;
+            }
+
+
+          }
+
+          .faqList {
+            position: absolute;
+            right: -100%;
+            z-index: 8;
+            background: #CFCFCF;
+            padding: 2em 1em;
+            top: 0;
+            bottom: 0;
+            width: 100%;
+            transition: all .5s ease;
+            overflow-y: scroll;
+
+              dd {
+                  a {
+                    display: inline;
+                    background: none;
+                    font-size: inherit;
+                    color: inherit;
+                    text-decoration: underline;
+                    font-weight: normal;
+                    line-height: normal;
+                  }
+              }
+
+            &.open {
+              right: 0;
+            }
+
+            .closeFAQ {
+              position: absolute;
+              right: 10px;
+              top: 10px;
+              line-height: 1.7;
+              @include display(flex);
+              @include align-items(center);
+              @include align-content(center);
+              @include justify-content(center);
+
+              &:hover {
+                cursor: pointer;
+                color: red;
+              }
+            }
+          }
+
+          ul {
+            padding: 0;
+
+            li {
+              margin: 0;
+              padding: 0;
+              list-style-type: none;
+
+              a {
+                font-size: 12px;
+                font-family: sans-serif;
+                padding-left: 1em;
+                font-style: italic;
+                background: rgb(250, 250, 250);
+                font-weight: normal;
+              }
+            }
+          }
+        }
+    }
+}
+
+h3 {
+  a[href='#top'] {
+    margin-left: 10px;
+    font-size: 12px;
+    float: right;
+    margin-right: 2em;
+  }
+}
+
+.scrunchy {
+    .scrunchyLink {
+        p {
+           background-color: #3276b1;
+           color: #fff;
+           width: auto;
+           border-radius: 4px;
+           padding: 4px 8px;
+           font-family: "open_sansregular",sans-serif;
+           font-weight: normal;
+           font-size: 12px;
+           margin: 0 1.75em;
+           margin-left: 0;
+
+           &:hover {
+            cursor: pointer;
+           }
+
+           .glyphicon {
+              transition: all .35s ease;
+           }
+        }
+
+        &.active {
+          .glyphicon {
+            transform: rotate(90deg);
+          }
+        }
+    }
+
+    dd {
+        overflow: hidden;
+        font-size: 12px;
+    }
+}

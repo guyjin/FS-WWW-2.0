@@ -1,4 +1,4 @@
-// @import "fonts";
+@import "fonts";
 @import "fsColors";
 @import "bourbon/bourbon";
 
@@ -46,7 +46,7 @@ body {
 
                     &:hover {
                         background-color: #efefef;
-                        text-decoration: underline;
+                        text-decoration: none;
                         color: $fs_two;
                     }
                 }
