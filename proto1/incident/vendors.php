@@ -172,7 +172,7 @@
             </div>
         </div>
 </div>
-<script src='js/tabs.js'></script>
+<script src='../js/tabs.js'></script>
 <?php
     include_once '../partials/pageEnd.php';
 ?>

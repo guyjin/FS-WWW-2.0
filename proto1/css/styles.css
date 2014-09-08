@@ -584,6 +584,8 @@ body {
           color: #fff; }
           body .flexcontainer .content .section.colorBlock div:first-of-type .splot .caption {
             color: #fff; }
+        body .flexcontainer .content .section.clean {
+          padding-top: 0; }
         body .flexcontainer .content .section .light {
           color: #fff; }
         body .flexcontainer .content .section #absContacts,
@@ -602,6 +604,12 @@ body {
             body .flexcontainer .content .section #absContacts li a:hover {
               background-color: rgba(255, 255, 255, 0.5);
               text-decoration: none; }
+        body .flexcontainer .content .section .list ul {
+          -webkit-columns: 3 12em;
+          -moz-columns: 3 12em;
+          columns: 3 12em;
+          list-style-type: none;
+          padding: 0; }
       body .flexcontainer .content .photobg {
         background-image: url(../img/rivervalley_lowres.jpg);
         background-repeat: no-repeat;
@@ -614,6 +622,17 @@ body {
         background: transparent url(../img/halftone.png) repeat top left; }
       body .flexcontainer .content .colorBlock * {
         color: #fff; }
+      body .flexcontainer .content .colorBlock input {
+        color: #000;
+        text-align: center;
+        margin-bottom: 0.5em;
+        padding: 5px 10px; }
+      body .flexcontainer .content .colorBlock input[type=submit] {
+        border: 0;
+        padding: 6px 10px;
+        font-size: 12px;
+        display: block;
+        width: 100%; }
       body .flexcontainer .content .colorBlock.colorBlock1 {
         background-color: darkolivegreen; }
       body .flexcontainer .content .colorBlock.colorBlock2 {
@@ -694,3 +713,7 @@ body {
       height: 16px;
       display: flex;
       width: 16px; }
+  body .well {
+    border: 1px solid #ccc;
+    background: #efefef;
+    padding: 1em; }

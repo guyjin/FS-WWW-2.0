@@ -451,6 +451,9 @@ body {
                     }
                 }
 
+                &.clean {
+                    padding-top: 0;
+                }
 
 
 
@@ -481,6 +484,14 @@ body {
                         }
                     }
                 }
+
+                .list {
+                    ul {
+                        @include columns(3 12em);
+                        list-style-type: none;
+                        padding: 0;
+                    }
+                }
             }
 
 
@@ -506,6 +517,21 @@ body {
             .colorBlock {
                 * {
                     color: #fff;
+                }
+
+                input {
+                    color: #000;
+                    text-align: center;
+                    margin-bottom: 0.5em;
+                    padding: 5px 10px
+                }
+
+                input[type=submit] {
+                    border: 0;
+                    padding: 6px 10px;
+                    font-size: 12px;
+                    display: block;
+                    width: 100%;
                 }
 
                 &.colorBlock1 {
@@ -602,6 +628,12 @@ body {
             display: flex;
             width: 16px;
         }
+    }
+
+    .well {
+        border: 1px solid #ccc;
+        background: #efefef;
+        padding: 1em;
     }
 
 }

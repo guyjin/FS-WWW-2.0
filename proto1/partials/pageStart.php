@@ -33,10 +33,10 @@
       <div class="breadcrumbs">
         <ul>
           <li>
-            <a href="index.php">Home</a>
+            <a href="index.php" tabindex="1">Home</a>
           </li>
           <li>
-            <a href="incident/">Incident Procurement</a>
+            <a href="incident/" tabindex="1">Incident Procurement</a>
           </li>
         </ul>
       </div>
