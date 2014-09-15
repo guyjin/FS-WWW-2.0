@@ -16,12 +16,12 @@
         <div class="subjects">
             <ul class="top">
                 <li>
-                    <a href="acronyms.php" target="_blank">What is (Acronyms and Definitions)</a>
+                    <a href="acronyms.php" target="_blank" tabindex="1">What is (Acronyms and Definitions)</a>
                 </li>
 
                 <li>
-                    <a data-target="overview">Overview of VIPR &amp; the Vendor Application</a>
-                    <div class="faqList" id="overview">
+                    <a data-target="overview" tabindex="1" class="subject">Overview of VIPR &amp; the Vendor Application</a>
+                    <div class="faqList" id="overview" tabindex="-1">
                         <div>
                             <a href="" name="overview"></a>
                             <h3>Overview of VIPR &amp; the Vendor Application
@@ -52,7 +52,7 @@
                                 <li>
                                     <dl class="scrunchy">
                                         <dt><p tabindex="0" id="tab2" role="tab">What is the vendor application?</p></dt>
-                                        <dd id="panel1" aria-labelledby="tab2" role="tabpanel">
+                                        <dd id="panel2" aria-labelledby="tab2" role="tabpanel">
                                             <p>
                                                 The VIPR vendor application is an interactive, Web-based application designed to provide vendors with a user friendly, intuitive vendor solution when using VIPR.  The vendor application uses wizard technology to provide step-by-step instructions to assist vendors in adding their resources into VIPR, finding solicitations that match their resources, submitting quotes on solicitations and amendments, and updating their company and resource information.
                                             </p>
@@ -145,15 +145,15 @@
                                                 </li>
                                             </ul>
                                             <p>
-                                    <span style="color:red;">*</span>Generic resources are used for various local equipment and services not listed on the National Solicitation Plan for I-BPAs, but may be identified on the Method of Hire (MOH) chart located in the <a href="http://www.nwcg.gov/teams/ibpwt/documents/index.htm">Interagency Incident Business Management Handbook (IIBMH)</a>.
-                                </p>
+                                                <span style="color:red;">*</span>Generic resources are used for various local equipment and services not listed on the National Solicitation Plan for I-BPAs, but may be identified on the Method of Hire (MOH) chart located in the <a href="http://www.nwcg.gov/teams/ibpwt/documents/index.htm">Interagency Incident Business Management Handbook (IIBMH)</a>.
+                                            </p>
                                         </dd>
                                     </dl>
                                 </li>
                                 <li>
                                     <dl class="scrunchy">
                                         <dt><p tabindex="0" id="tab3" role="tab">Who will use the vendor application? </p></dt>
-                                        <dd id="panel1" aria-labelledby="tab3" role="tabpanel">
+                                        <dd id="panel3" aria-labelledby="tab3" role="tabpanel">
                                             <p>The vendor application is available for vendors responding to solicitations and modifications for:</p>
                                             <ul>
                                                 <li>Aircraft Rescue Firefighting Apparatus</li>
@@ -246,7 +246,7 @@
                                 <li>
                                     <dl class="scrunchy">
                                         <dt><p tabindex="0" id="tab4" role="tab">When will the vendor application be available?</p></dt>
-                                        <dd id="panel1" aria-labelledby="tab4" role="tabpanel">
+                                        <dd id="panel4" aria-labelledby="tab4" role="tabpanel">
                                             <p>The implementation of resources into the vendor application will occur in phases. Resources scheduled for solicitation or re-solicitation in 2011 and beyond will be developed for use with the new vendor application in VIPR. All other remaining resources will be converted in 2013, so that Formatta will no longer be used after the 2013 season.</p>
                                         </dd>
                                     </dl>
@@ -255,7 +255,7 @@
                                     <dl class="scrunchy">
                                         <dt><p tabindex="0" id="tab5" role="tab">When will the vendor application be available for all types of solicitations?
                                         </p></dt>
-                                        <dd id="panel1" aria-labelledby="tab5" role="tabpanel">
+                                        <dd id="panel5" aria-labelledby="tab5" role="tabpanel">
                                             <p>
                                                 All types of soicitations are now using the vendor application
                                             </p>
@@ -263,9 +263,9 @@
                                     </dl>
                                 </li>
                                 <li>
-                                    <dl class="scrunchy" id="tab6" role="tab">
-                                        <dt><p tabindex="0">Where can I find out more about the vendor application and how I am suppose to use it? </p></dt>
-                                        <dd id="panel1" aria-labelledby="tab6" role="tabpanel">
+                                    <dl class="scrunchy">
+                                        <dt><p tabindex="0" id="tab6" role="tab">Where can I find out more about the vendor application and how I am suppose to use it? </p></dt>
+                                        <dd id="panel6" aria-labelledby="tab6" role="tabpanel">
                                             <p>The vendor app uses wizard technology to provide step-by-step instructions to assist you with adding your resources into VIPR, finding solicitations that match your resources, submitting quotes on solicitations and amendments, and updating your company and resource information. In addition, there are several resources are available to assist you with using the application, such as the online help within the application itself, as well as the VIPR Vendor Application Web page at  <a href="vendorapp.php">http://www.fs.fed.us/business/incident/vendorapp.php</a>.</p>
                                         </dd>
                                     </dl>
@@ -273,12 +273,12 @@
 
                                 <li>
                                     <dl class="scrunchy">
-                                        <dt><p tabindex="0" id="tab7" role="tab">
-
+                                        <dt>
+                                            <p tabindex="0" id="tab7" role="tab">
                                                 Where can I find information about the results from online VIPR surveys?
-
-                                        </p></dt>
-                                        <dd id="panel1" aria-labelledby="tab7" role="tabpanel">
+                                            </p>
+                                        </dt>
+                                        <dd id="panel7" aria-labelledby="tab7" role="tabpanel">
                                             <p>
                                                 The Forest Service had asked you to give us your feedback in online surveys regarding VIPR customer service and support as well as VIPR system functionality and availability.  A <a href="static/Vendor Survey Newsletter REV20140515.pdf">summary</a> of the results from the online surveys, to include concerns, changes that have been implemented as a result of the feedback received, and actions for the furture is now available.
                                             </p>
@@ -291,8 +291,8 @@
                 </li>
 
                 <li>
-                    <a data-target="contracting">Contracting with the Forest Service on Fire / Incidents</a>
-                    <div class="faqList" id="contracting">
+                    <a data-target="contracting" tabindex="1" class="subject">Contracting with the Forest Service on Fire / Incidents</a>
+                    <div class="faqList" id="contracting" tabindex="-1">
                         <h3>
                             Contracting with the Forest Service on Fire / Incidents
                             <span class="closeFAQ"><span class="glyphicon glyphicon-remove"></span>close</span>
